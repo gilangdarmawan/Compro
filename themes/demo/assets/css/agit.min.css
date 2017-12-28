@@ -1,0 +1,363 @@
+html,
+body {
+    color: #525252;
+}
+
+.form-control:focus,
+.btn:focus {
+    border-color: #f79021;
+    box-shadow: none;
+}
+
+#layout-header {
+    background: #6c1a42;
+    color: #fff;
+    padding: .2rem 0;
+}
+
+#layout-header .nav-lang {
+    color: #fff;
+    font-size: .8rem;
+}
+
+#layout-header .form-inline .form-control {
+    background: no-repeat;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding-left: 1.2rem;
+    font-size: .8rem;
+    min-width: 250px;
+}
+
+#layout-header .form-inline .btn {
+    position: absolute;
+    right: 1.25rem;
+    background: no-repeat;
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+
+#layout-header .form-inline .btn:hover {
+    color: #f79021;
+}
+
+#layout-header .form-inline .btn:focus {
+    box-shadow: none;
+}
+
+#layout-nav {
+    padding: 1.2rem 1rem;
+    background: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#accessDiv .carousel-caption {
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#accessDiv .card {
+    width: 60%;
+    background: none;
+    text-align: left;
+    color: #525252;
+    border: none;
+}
+
+.page-title {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/jumbotron.png") center center no-repeat;
+    background-size: cover;
+    padding: 5em 1em;
+    color: #fff;
+}
+
+.page-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #6c1a42;
+    opacity: .9;
+}
+
+.page-title .container {
+    position: relative;
+    text-align: center;
+}
+
+/* HOME PAGE */
+
+.home-offer {
+    background-image: url(../images/home/home_offer.png);
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-position: 15% center;
+}
+
+.home-offer .img-fluid {
+    display: none;
+}
+
+.page-content .desc {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.home-offer .desc {
+    text-align: left;
+}
+
+.slide-section .desc {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.slide-section .desc span {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.slide-section {
+    background: url(../images/home/slide_div_section.png) no-repeat, url(../images/home/slide_div_section_thumb_1.png) no-repeat, url(../images/home/slide_div_section_thumb_2.png) no-repeat;
+    background-position: center top, calc(50% + 36rem) calc(50% + 1rem), calc(50% - 37rem) calc(50% + 18rem);
+    background-size: contain, auto, auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.partners-section {
+    background: url(../images/home/slide_div_section_thumb_2.png) no-repeat, url(../images/home/slide_div_section_thumb_1.png) no-repeat;
+    background-position: top left, bottom right;
+    background-size: 7%, 6%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Microsoft */
+
+.cardbox {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+.cardbox .original {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/jumbotron.png") center center no-repeat;
+    background-size: cover;
+    padding: 6em 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardbox .original:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #151515;
+    opacity: .6;
+}
+
+.cardbox .original .text {
+    position: relative;
+    font-weight: 500;
+}
+
+.agit-csp-card .on-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f79021;
+    color: #fff;
+    padding: 1em;
+    transform: translateY(-100%);
+    -webkit-transition: transform 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+
+.agit-csp-card .cardbox:hover .on-hover {
+    transform: translateY(0);
+}
+
+.pns .nav-pills .nav-link {
+    background-color: #fff;
+    margin-bottom: .5rem;
+    height: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.pns .nav-pills .nav-link.active,
+.pns .nav-pills .show>.nav-link {
+    border: 2px solid #f79021;
+}
+
+.pns .logo-box {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.page-content .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem
+}
+
+.page-content .title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.4em;
+}
+
+.page-content .sub-title {
+    font-size: .9rem;
+}
+
+.page-content .card-deck .card {
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+    -webkit-box-shadow: 0 5px 20px -5px rgba(50, 50, 93, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px -5px rgba(50, 50, 93, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.08);
+}
+
+.page-content .card-deck .card:hover {
+    -webkit-box-shadow: 0 30px 75px -15px rgba(50, 50, 93, 0.3), 0 25px 40px -20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 30px 75px -15px rgba(50, 50, 93, 0.3), 0 25px 40px -20px rgba(0, 0, 0, 0.1);
+}
+
+.page-content .card-img-top {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+}
+
+.page-content .card-deck .name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .6em 0 0;
+    line-height: 1rem;
+}
+
+.page-content .card-deck .job-title {
+    font-size: .8rem;
+    font-weight: 500;
+    color: #7c1442;
+}
+
+.page-content .card-deck .card-body {
+    font-size: .85rem;
+    text-align: center;
+}
+
+.page-content .partner-div a img {
+    margin: .5rem;
+}
+
+/*business solution*/
+.bs-div .agit-csp-card {
+    margin: .5rem;
+}
+
+.footer-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/home/footer_div_section.png") center center no-repeat;
+    background-size: cover;
+    padding: 3em 1em;
+    color: #fff;
+}
+
+.footer-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f79021;
+    opacity: .9;
+}
+
+.footer-bg ul {
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    list-style-type: none;
+}
+
+.footer-bg ul li a,
+.footer-bg p {
+    color: #fff;
+    font-size: .9rem;
+}
+
+.footer-bg ul li a:hover,
+.footer-bg ul li a:focus,
+.footer-bg .social-link a:hover,
+.footer-bg .social-link a:focus {
+    text-decoration: none;
+    color: #7c1442;
+}
+
+.footer-bg .social-link a {
+    color: #fff;
+    margin-right: .5em;
+}
+
+@media screen and (max-width: 667px) {
+    /* navbar */
+    #layout-header .form-inline .form-control {
+        max-width: 155px;
+        min-width: 0;
+    }
+    /* home */
+    .home-offer {
+        background-image: none;
+    }
+    .home-offer .img-fluid {
+        display: block;
+    }
+    .footer-bg {
+        padding: 2em 1em;
+    }
+}

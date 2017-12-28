@@ -1,0 +1,42 @@
+1514457198a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:843:"[viewBag]
+
+[staticMenu]
+code = "mainMenu"
+==
+<!-- Nav -->
+<nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+              <img src="/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            {% if staticMenu.menuItems %}
+            <ul class="navbar-nav ml-auto">
+                {% for item in staticMenu.menuItems %}
+                <li class="nav-item"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</nav>";s:5:"mtime";i:1514448931;s:6:"markup";s:793:"<!-- Nav -->
+<nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+              <img src="/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            {% if staticMenu.menuItems %}
+            <ul class="navbar-nav ml-auto">
+                {% for item in staticMenu.menuItems %}
+                <li class="nav-item"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</nav>";s:4:"code";N;s:7:"viewBag";a:0:{}s:10:"staticMenu";a:1:{s:4:"code";s:8:"mainMenu";}}}

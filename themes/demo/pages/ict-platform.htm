@@ -1,0 +1,22 @@
+title = "ICT-Platform"
+url = "/ict-platform"
+layout = "master"
+description = "Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by
+our strategic alliance with world leading technology companies."
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "ict-platform"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "ict-platform"
+postPage = "ict-platform-post"
+==
+{% partial 'site/title' %}
+{% component 'blogPosts' %}

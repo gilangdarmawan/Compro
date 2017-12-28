@@ -1,0 +1,24 @@
+[viewBag]
+
+[staticMenu]
+code = "mainMenu"
+==
+<!-- Nav -->
+<nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+              <img src="/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            {% if staticMenu.menuItems %}
+            <ul class="navbar-nav ml-auto">
+                {% for item in staticMenu.menuItems %}
+                <li class="nav-item"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</nav>
