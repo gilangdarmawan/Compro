@@ -1,0 +1,42 @@
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: text
+    desc:
+        label: Description
+        span: full
+        size: ''
+        oc.commentPosition: ''
+        type: richeditor
+    post_date:
+        label: Date
+        oc.commentPosition: ''
+        mode: datetime
+        span: auto
+        type: datepicker
+    category:
+        label: Category
+        oc.commentPosition: ''
+        options:
+            ICT: '1'
+            'Digital Platform': '2'
+        span: auto
+        disabled: 0
+        hidden: 0
+        type: dropdown
+    icon:
+        label: Icon
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        disabled: 0
+        hidden: 0
+        required: 1
+        type: fileupload

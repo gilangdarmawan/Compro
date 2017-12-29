@@ -1,0 +1,4 @@
+title: Post
+modelClass: Agit\AgitPost\Models\Post
+toolbar:
+    buttons: reorder_toolbar

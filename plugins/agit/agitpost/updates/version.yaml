@@ -1,0 +1,17 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table agit_agitpost_'
+    - builder_table_create_agit_agitpost_.php
+1.0.3:
+    - 'Updated table agit_agitpost_'
+    - builder_table_update_agit_agitpost_.php
+1.0.4:
+    - 'Updated table agit_agitpost_'
+    - builder_table_update_agit_agitpost__2.php
+1.0.5:
+    - 'Updated table agit_agitpost_'
+    - builder_table_update_agit_agitpost__3.php
+1.0.6:
+    - 'Updated table agit_agitpost_'
+    - builder_table_update_agit_agitpost__4.php

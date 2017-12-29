@@ -1,0 +1,11 @@
+plugin:
+    name: 'agit.agitpost::lang.plugin.name'
+    description: 'agit.agitpost::lang.plugin.description'
+    author: Agit
+    icon: oc-icon-edit
+    homepage: 'https://github.com/gilangdarmawan'
+navigation:
+    main-menu-item:
+        label: Post
+        url: agit/agitpost/post
+        icon: icon-edit

@@ -1,0 +1,35 @@
+1514536669a:1:{s:16:"ict-platform.htm";a:16:{s:8:"fileName";s:16:"ict-platform.htm";s:7:"content";s:883:"title = "ICT-Platform"
+url = "/ict-platform"
+layout = "master"
+description = "Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by
+our strategic alliance with world leading technology companies."
+is_hidden = 0
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "ict-platform"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "ict-platform"
+postPage = "ict-platform-post"
+
+[builderList]
+modelClass = "Agit\AgitPost\Models\Post"
+scope = "-"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% partial 'site/title' %}
+{% component 'blogPosts' %}
+{% component 'builderList' %}";s:5:"mtime";i:1514536068;s:6:"markup";s:86:"{% partial 'site/title' %}
+{% component 'blogPosts' %}
+{% component 'builderList' %}";s:4:"code";N;s:5:"title";s:12:"ICT-Platform";s:3:"url";s:13:"/ict-platform";s:6:"layout";s:6:"master";s:11:"description";s:169:"Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by
+our strategic alliance with world leading technology companies.";s:9:"is_hidden";s:1:"0";s:8:"child_of";s:13:"mey_no_parent";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:12:"ict-platform";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:12:"ict-platform";s:8:"postPage";s:17:"ict-platform-post";}s:11:"builderList";a:7:{s:10:"modelClass";s:25:"Agit\AgitPost\Models\Post";s:5:"scope";s:1:"-";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

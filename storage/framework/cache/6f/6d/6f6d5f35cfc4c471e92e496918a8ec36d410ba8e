@@ -1,0 +1,24 @@
+1514536669a:1:{s:21:"ict-platform-post.htm";a:16:{s:8:"fileName";s:21:"ict-platform-post.htm";s:7:"content";s:622:"title = "ICT-Platform List"
+url = "/ict-platform/:slug"
+layout = "master"
+description = "Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by our strategic alliance with world leading technology companies."
+is_hidden = 0
+child_of = "ict-platform"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[breadcrumbs]
+main-ol-class = "breadcrumb"
+active-class = "active"
+disabled-class = "disabled"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "ict-platform"
+==
+{% partial 'site/title' %}
+{% component 'breadcrumbs' %}
+{% component 'blogPost' %}";s:5:"mtime";i:1514450960;s:6:"markup";s:85:"{% partial 'site/title' %}
+{% component 'breadcrumbs' %}
+{% component 'blogPost' %}";s:4:"code";N;s:5:"title";s:17:"ICT-Platform List";s:3:"url";s:19:"/ict-platform/:slug";s:6:"layout";s:6:"master";s:11:"description";s:168:"Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by our strategic alliance with world leading technology companies.";s:9:"is_hidden";s:1:"0";s:8:"child_of";s:12:"ict-platform";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:11:"breadcrumbs";a:3:{s:13:"main-ol-class";s:10:"breadcrumb";s:12:"active-class";s:6:"active";s:14:"disabled-class";s:8:"disabled";}s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:12:"ict-platform";}}}

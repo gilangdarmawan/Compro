@@ -1,0 +1,10 @@
+name: Post
+form: $/agit/agitpost/models/post/fields.yaml
+modelClass: Agit\AgitPost\Models\Post
+defaultRedirect: agit/agitpost/post
+create:
+    redirect: 'agit/agitpost/post/update/:id'
+    redirectClose: agit/agitpost/post
+update:
+    redirect: agit/agitpost/post
+    redirectClose: agit/agitpost/post

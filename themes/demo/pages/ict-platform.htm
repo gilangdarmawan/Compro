@@ -17,6 +17,16 @@ noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "ict-platform"
 postPage = "ict-platform-post"
+
+[builderList]
+modelClass = "Agit\AgitPost\Models\Post"
+scope = "-"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 {% partial 'site/title' %}
 {% component 'blogPosts' %}
+{% component 'builderList' %}

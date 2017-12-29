@@ -1,6 +1,0 @@
-plugin:
-    name: 'agit.services::lang.plugin.name'
-    description: 'agit.services::lang.plugin.description'
-    author: Agit
-    icon: oc-icon-users
-    homepage: 'https://github.com/gilangdarmawan'
