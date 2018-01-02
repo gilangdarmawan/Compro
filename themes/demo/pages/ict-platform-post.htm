@@ -1,5 +1,5 @@
 title = "ICT-Platform List"
-url = "/ict-platform/:slug"
+url = "/ict-platform/:id"
 layout = "master"
 description = "Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by our strategic alliance with world leading technology companies."
 is_hidden = 0
@@ -13,10 +13,25 @@ main-ol-class = "breadcrumb"
 active-class = "active"
 disabled-class = "disabled"
 
-[blogPost]
-slug = "{{ :slug }}"
-categoryPage = "ict-platform"
+[builderDetails]
+modelClass = "Agit\AgitPost\Models\Post"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "id"
+notFoundMessage = "Record not found"
 ==
 {% partial 'site/title' %}
 {% component 'breadcrumbs' %}
-{% component 'blogPost' %}
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+<div class="container">
+    {% if record %}
+    <h3>{{ record.title }}</h3>
+    <img src="{{ record.iconslider.path }}" alt=""> 
+    <p>{{ record.post_date }}</p>
+    <p>{{ record.desc | raw }}</p>
+    <p>Category : {{ record.category }}</p>
+    {% else %} {{ notFoundMessage }} {% endif %}
+</div>

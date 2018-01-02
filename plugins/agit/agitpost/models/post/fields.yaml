@@ -21,13 +21,13 @@ fields:
         label: Category
         oc.commentPosition: ''
         options:
-            ICT: '1'
-            'Digital Platform': '2'
+            ICT: ICT
+            'Digital Platform': 'Digital Platform'
         span: auto
         disabled: 0
         hidden: 0
         type: dropdown
-    icon:
+    iconslider:
         label: Icon
         oc.commentPosition: ''
         mode: image

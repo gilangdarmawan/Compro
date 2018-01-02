@@ -24,7 +24,7 @@ class __TwigTemplate_f25b2096e8fc3359f6719c30c9b86ca3e8093cd67ed2712eb7445546bc4
         // line 5
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
         echo "\">
-              <img src=\"/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png\" alt=\"logo\">
+              <img src=\"/compro/storage/app/media/company-logo/agit-logo.png\" alt=\"logo\">
             </a>
         </div>
         <div class=\"collapse navbar-collapse navbar-main-collapse\">
@@ -81,7 +81,7 @@ class __TwigTemplate_f25b2096e8fc3359f6719c30c9b86ca3e8093cd67ed2712eb7445546bc4
     <div class=\"container\">
         <div class=\"navbar-header\">
             <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">
-              <img src=\"/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png\" alt=\"logo\">
+              <img src=\"/compro/storage/app/media/company-logo/agit-logo.png\" alt=\"logo\">
             </a>
         </div>
         <div class=\"collapse navbar-collapse navbar-main-collapse\">

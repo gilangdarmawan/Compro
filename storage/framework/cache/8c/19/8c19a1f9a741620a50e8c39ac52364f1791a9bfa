@@ -1,4 +1,4 @@
-1514536669a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:843:"[viewBag]
+1514887648a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:831:"[viewBag]
 
 [staticMenu]
 code = "mainMenu"
@@ -8,7 +8,7 @@ code = "mainMenu"
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="{{ 'home'|page }}">
-              <img src="/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png" alt="logo">
+              <img src="/compro/storage/app/media/company-logo/agit-logo.png" alt="logo">
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-main-collapse">
@@ -21,12 +21,12 @@ code = "mainMenu"
             {% endif %}
         </div>
     </div>
-</nav>";s:5:"mtime";i:1514448931;s:6:"markup";s:793:"<!-- Nav -->
+</nav>";s:5:"mtime";i:1514862252;s:6:"markup";s:781:"<!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="{{ 'home'|page }}">
-              <img src="/agit-project/themes/rainlab-bonjour/assets/images/agit-logo.png" alt="logo">
+              <img src="/compro/storage/app/media/company-logo/agit-logo.png" alt="logo">
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-main-collapse">

@@ -1,4 +1,4 @@
-1514535078a:1:{s:13:"Home/News.htm";a:6:{s:8:"fileName";s:13:"Home/News.htm";s:7:"content";s:2209:"<div class="bg-white slide-section">
+1514883780a:1:{s:13:"Home/News.htm";a:6:{s:8:"fileName";s:13:"Home/News.htm";s:7:"content";s:2209:"<div class="bg-white slide-section">
     <div class="container">
         <div class="desc mb-5">
             News
@@ -35,7 +35,7 @@
             <button class="btn btn-primary">More News</button>
         </div>
     </div>
-</div>";s:5:"mtime";i:1514534475;s:6:"markup";s:2209:"<div class="bg-white slide-section">
+</div>";s:5:"mtime";i:1514881654;s:6:"markup";s:2209:"<div class="bg-white slide-section">
     <div class="container">
         <div class="desc mb-5">
             News

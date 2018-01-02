@@ -46,7 +46,7 @@ class __TwigTemplate_ce6701b959d8ccec25e959f9500a0690fbf56861ccf8bd68d6b0827d16b
             <div class=\"col-md-3 col-12\">
                 <div class=\"h6 mb-md-3\"><b>Head Office</b></div>
                 <p>PT Astra Graphia Information Technology<br> ANZ Tower, 22nd Floor Jl. Jend. Sudirman Kav. 33A Jakarta 10220, Indonesia</p>
-                <div class=\"h6 mb-md-3\"><img src=\"/agit-project/themes/rainlab-bonjour/assets/images/logo_agit_white.png\" alt=\"\" style=\"width: 3rem;\"> <b>Connect With Us</b></div>
+                <div class=\"h6 mb-md-3\"><img src=\"/compro/storage/app/media/company-logo/logo_agit_white.png\" alt=\"\" style=\"width: 3rem;\"> <b>Connect With Us</b></div>
                 <div class=\"social-link\">
                 \t<a href=\"\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>
                 \t<a href=\"\"><i class=\"fa fa-youtube-square fa-2x\"></i></a>
@@ -55,7 +55,7 @@ class __TwigTemplate_ce6701b959d8ccec25e959f9500a0690fbf56861ccf8bd68d6b0827d16b
             </div>
         </div>
         <div class=\"mt-4 mb-2\">
-        \t<div class=\"h6 mb-md-3 text-center\"><img src=\"/agit-project/themes/rainlab-bonjour/assets/images/logo_agit_white.png\" alt=\"\"> Copyright All Rights Reserved &copy; ";
+        \t<div class=\"h6 mb-md-3 text-center\"><img src=\"/compro/storage/app/media/company-logo/logo_agit_white.png\" alt=\"\"> Copyright All Rights Reserved &copy; ";
         // line 40
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</div>
@@ -111,7 +111,7 @@ class __TwigTemplate_ce6701b959d8ccec25e959f9500a0690fbf56861ccf8bd68d6b0827d16b
             <div class=\"col-md-3 col-12\">
                 <div class=\"h6 mb-md-3\"><b>Head Office</b></div>
                 <p>PT Astra Graphia Information Technology<br> ANZ Tower, 22nd Floor Jl. Jend. Sudirman Kav. 33A Jakarta 10220, Indonesia</p>
-                <div class=\"h6 mb-md-3\"><img src=\"/agit-project/themes/rainlab-bonjour/assets/images/logo_agit_white.png\" alt=\"\" style=\"width: 3rem;\"> <b>Connect With Us</b></div>
+                <div class=\"h6 mb-md-3\"><img src=\"/compro/storage/app/media/company-logo/logo_agit_white.png\" alt=\"\" style=\"width: 3rem;\"> <b>Connect With Us</b></div>
                 <div class=\"social-link\">
                 \t<a href=\"\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>
                 \t<a href=\"\"><i class=\"fa fa-youtube-square fa-2x\"></i></a>
@@ -120,7 +120,7 @@ class __TwigTemplate_ce6701b959d8ccec25e959f9500a0690fbf56861ccf8bd68d6b0827d16b
             </div>
         </div>
         <div class=\"mt-4 mb-2\">
-        \t<div class=\"h6 mb-md-3 text-center\"><img src=\"/agit-project/themes/rainlab-bonjour/assets/images/logo_agit_white.png\" alt=\"\"> Copyright All Rights Reserved &copy; {{ \"now\"|date(\"Y\") }}</div>
+        \t<div class=\"h6 mb-md-3 text-center\"><img src=\"/compro/storage/app/media/company-logo/logo_agit_white.png\" alt=\"\"> Copyright All Rights Reserved &copy; {{ \"now\"|date(\"Y\") }}</div>
         </div>
     </div>
 </div>", "C:\\xampp\\htdocs\\compro/themes/demo/partials/site/footer.htm", "");

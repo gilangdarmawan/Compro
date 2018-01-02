@@ -13,3 +13,12 @@ columns:
         label: Date
         type: date
         sortable: true
+    category:
+        label: Category
+        type: text
+    icon:
+        label: Icon
+        type: text
+    id:
+        label: ID
+        type: number

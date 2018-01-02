@@ -20,9 +20,12 @@ class Post extends Model
      */
     public $rules = [
     ];
-
     /**
      * @var string The database table used by the model.
      */
     public $table = 'agit_agitpost_';
+
+    public $attachOne = [
+      'iconslider' =>'System\Models\File'
+    ];
 }

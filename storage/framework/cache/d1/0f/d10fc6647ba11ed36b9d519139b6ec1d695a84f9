@@ -1,6 +1,6 @@
-1514536669a:1:{s:13:"news-post.htm";a:15:{s:8:"fileName";s:13:"news-post.htm";s:7:"content";s:1185:"title = "News List"
+1514887625a:1:{s:13:"news-post.htm";a:15:{s:8:"fileName";s:13:"news-post.htm";s:7:"content";s:1217:"title = "News List"
 url = "/news/:slug"
-layout = "default"
+layout = "master"
 is_hidden = 0
 child_of = "news"
 hide_crumb = 0
@@ -16,9 +16,10 @@ main-ol-class = "breadcrumb"
 active-class = "active"
 disabled-class = "disabled"
 ==
+{% set post = blogPost.post %}
+
+<div class="container">
 {% component 'breadcrumbs' %}
-{% set post = blogPost.post %}
-
 <div class="content">{{ post.content_html|raw }}</div>
 
 {% if post.featured_images.count %}
@@ -43,9 +44,11 @@ disabled-class = "disabled"
         {% endfor %}
     {% endif %}
     on {{ post.published_at|date('M d, Y') }}
-</p>";s:5:"mtime";i:1514361917;s:6:"markup";s:865:"{% component 'breadcrumbs' %}
-{% set post = blogPost.post %}
+</p>
+</div>";s:5:"mtime";i:1514881375;s:6:"markup";s:898:"{% set post = blogPost.post %}
 
+<div class="container">
+{% component 'breadcrumbs' %}
 <div class="content">{{ post.content_html|raw }}</div>
 
 {% if post.featured_images.count %}
@@ -70,4 +73,5 @@ disabled-class = "disabled"
         {% endfor %}
     {% endif %}
     on {{ post.published_at|date('M d, Y') }}
-</p>";s:4:"code";N;s:5:"title";s:9:"News List";s:3:"url";s:11:"/news/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"child_of";s:4:"news";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:4:"news";}s:11:"breadcrumbs";a:3:{s:13:"main-ol-class";s:10:"breadcrumb";s:12:"active-class";s:6:"active";s:14:"disabled-class";s:8:"disabled";}}}
+</p>
+</div>";s:4:"code";N;s:5:"title";s:9:"News List";s:3:"url";s:11:"/news/:slug";s:6:"layout";s:6:"master";s:9:"is_hidden";s:1:"0";s:8:"child_of";s:4:"news";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:4:"news";}s:11:"breadcrumbs";a:3:{s:13:"main-ol-class";s:10:"breadcrumb";s:12:"active-class";s:6:"active";s:14:"disabled-class";s:8:"disabled";}}}

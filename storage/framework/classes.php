@@ -125,4 +125,6 @@
   'agit\\agitpost\\Controllers\\post' => 'plugins\\agit\\agitpost\\controllers\\post.php',
   'Agit\\AgitPost\\Models\\Post' => 'plugins\\agit\\agitpost\\models\\Post.php',
   'RainLab\\Builder\\Classes\\ComponentHelper' => 'plugins\\rainlab\\builder\\classes\\ComponentHelper.php',
+  'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
+  'backend\\Controllers\\userroles' => 'modules\\backend\\controllers\\userroles.php',
 );

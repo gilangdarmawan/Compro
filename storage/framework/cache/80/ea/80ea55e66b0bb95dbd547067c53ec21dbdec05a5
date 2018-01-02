@@ -1,55 +1,55 @@
-1514535122a:1:{s:17:"Home/Partners.htm";a:6:{s:8:"fileName";s:17:"Home/Partners.htm";s:7:"content";s:1704:"<div class="page-content bg-light">
-    <div class="container partner-div">
-    	<div class="title">Our Partners</div>
-        <div class="col-md-10 col-12 mx-auto text-center">
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/microsoft.png" alt="microsoft"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/oracle.png" alt="oracle"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/tibco.png" alt="tibco"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/sap.png" alt="sap"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/dell.png" alt="dell"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/k2.png" alt="k2"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/hp.png" alt="hp"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/cisco.png" alt="cisco"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/landesk.png" alt="landesk"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/vmware.png" alt="vmware"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/ibm.png" alt="ibm"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/symantec.png" alt="symantec"></a>
-        </div>
-    </div>
-</div>";s:5:"mtime";i:1514534504;s:6:"markup";s:1704:"<div class="page-content bg-light">
-    <div class="container partner-div">
-    	<div class="title">Our Partners</div>
-        <div class="col-md-10 col-12 mx-auto text-center">
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/microsoft.png" alt="microsoft"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/oracle.png" alt="oracle"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/tibco.png" alt="tibco"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/sap.png" alt="sap"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/dell.png" alt="dell"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/k2.png" alt="k2"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/hp.png" alt="hp"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/cisco.png" alt="cisco"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/landesk.png" alt="landesk"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/vmware.png" alt="vmware"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/ibm.png" alt="ibm"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/symantec.png" alt="symantec"></a>
-        </div>
-    </div>
-</div>";s:4:"code";N;s:12:"parsedMarkup";s:1704:"<div class="page-content bg-light">
-    <div class="container partner-div">
-    	<div class="title">Our Partners</div>
-        <div class="col-md-10 col-12 mx-auto text-center">
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/microsoft.png" alt="microsoft"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/oracle.png" alt="oracle"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/tibco.png" alt="tibco"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/sap.png" alt="sap"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/dell.png" alt="dell"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/k2.png" alt="k2"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/hp.png" alt="hp"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/cisco.png" alt="cisco"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/landesk.png" alt="landesk"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/vmware.png" alt="vmware"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/ibm.png" alt="ibm"></a>
-        	<a href="#"><img src="/agit-project/themes/rainlab-bonjour/assets/images/company_logo/symantec.png" alt="symantec"></a>
-        </div>
-    </div>
+1514885501a:1:{s:17:"Home/Partners.htm";a:6:{s:8:"fileName";s:17:"Home/Partners.htm";s:7:"content";s:1649:"<div class="page-content bg-light">
+	<div class="container partner-div">
+		<div class="title">Our Partners</div>
+		<div class="col-md-10 col-12 mx-auto text-center">
+			<a href="#"><img src="/compro/storage/app/media/company-logo/microsoft.png" alt="microsoft" class="fr-fic fr-dii"></a>
+			<a href="https://www.oracle.com/index.html" rel="noopener noreferrer" target="_blank"><img src="/compro/storage/app/media/company-logo/oracle.png" alt="oracle" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/tibco.png" alt="tibco" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/SAP.png" alt="sap" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/dell.png" alt="dell" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/K2.png" alt="k2" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/HP.png" alt="hp" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/cisco.png" alt="cisco" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/LANdesk.png" alt="landesk" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/vmware.png" alt="vmware" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/IBM.png" alt="ibm" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/symantec.png" alt="symantec" class="fr-fic fr-dii"></a>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1514864136;s:6:"markup";s:1649:"<div class="page-content bg-light">
+	<div class="container partner-div">
+		<div class="title">Our Partners</div>
+		<div class="col-md-10 col-12 mx-auto text-center">
+			<a href="#"><img src="/compro/storage/app/media/company-logo/microsoft.png" alt="microsoft" class="fr-fic fr-dii"></a>
+			<a href="https://www.oracle.com/index.html" rel="noopener noreferrer" target="_blank"><img src="/compro/storage/app/media/company-logo/oracle.png" alt="oracle" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/tibco.png" alt="tibco" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/SAP.png" alt="sap" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/dell.png" alt="dell" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/K2.png" alt="k2" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/HP.png" alt="hp" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/cisco.png" alt="cisco" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/LANdesk.png" alt="landesk" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/vmware.png" alt="vmware" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/IBM.png" alt="ibm" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/symantec.png" alt="symantec" class="fr-fic fr-dii"></a>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:12:"parsedMarkup";s:1649:"<div class="page-content bg-light">
+	<div class="container partner-div">
+		<div class="title">Our Partners</div>
+		<div class="col-md-10 col-12 mx-auto text-center">
+			<a href="#"><img src="/compro/storage/app/media/company-logo/microsoft.png" alt="microsoft" class="fr-fic fr-dii"></a>
+			<a href="https://www.oracle.com/index.html" rel="noopener noreferrer" target="_blank"><img src="/compro/storage/app/media/company-logo/oracle.png" alt="oracle" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/tibco.png" alt="tibco" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/SAP.png" alt="sap" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/dell.png" alt="dell" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/K2.png" alt="k2" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/HP.png" alt="hp" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/cisco.png" alt="cisco" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/LANdesk.png" alt="landesk" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/vmware.png" alt="vmware" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/IBM.png" alt="ibm" class="fr-fic fr-dii"></a>
+			<a href="#"><img src="/compro/storage/app/media/company-logo/symantec.png" alt="symantec" class="fr-fic fr-dii"></a>
+		</div>
+	</div>
 </div>";}}

@@ -1,6 +1,6 @@
-1514536669a:1:{s:8:"news.htm";a:15:{s:8:"fileName";s:8:"news.htm";s:7:"content";s:1943:"title = "News"
+1514887625a:1:{s:8:"news.htm";a:15:{s:8:"fileName";s:8:"news.htm";s:7:"content";s:1942:"title = "News"
 url = "/news"
-layout = "default"
+layout = "master"
 is_hidden = 0
 child_of = "home"
 hide_crumb = 0
@@ -61,7 +61,7 @@ disabled-class = "disabled"
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
         {% endif %}
     </ul>
-{% endif %}";s:5:"mtime";i:1514361819;s:6:"markup";s:1491:"{% component 'breadcrumbs' %}
+{% endif %}";s:5:"mtime";i:1514880952;s:6:"markup";s:1491:"{% component 'breadcrumbs' %}
 {% set posts = blogPosts.posts %}
 
 <ul class="post-list">
@@ -101,4 +101,4 @@ disabled-class = "disabled"
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
         {% endif %}
     </ul>
-{% endif %}";s:4:"code";N;s:5:"title";s:4:"News";s:3:"url";s:5:"/news";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"child_of";s:4:"home";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:4:"news";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:4:"news";s:8:"postPage";s:9:"news-post";}s:11:"breadcrumbs";a:3:{s:13:"main-ol-class";s:10:"breadcrumb";s:12:"active-class";s:6:"active";s:14:"disabled-class";s:8:"disabled";}}}
+{% endif %}";s:4:"code";N;s:5:"title";s:4:"News";s:3:"url";s:5:"/news";s:6:"layout";s:6:"master";s:9:"is_hidden";s:1:"0";s:8:"child_of";s:4:"home";s:10:"hide_crumb";s:1:"0";s:18:"remove_crumb_trail";s:1:"0";s:14:"crumb_disabled";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:4:"news";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:4:"news";s:8:"postPage";s:9:"news-post";}s:11:"breadcrumbs";a:3:{s:13:"main-ol-class";s:10:"breadcrumb";s:12:"active-class";s:6:"active";s:14:"disabled-class";s:8:"disabled";}}}
