@@ -63,6 +63,7 @@ a:hover {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
+    font-weight: 500;
 }
 
 #accessDiv .carousel-caption {
@@ -372,6 +373,14 @@ a:hover {
 .footer-bg .social-link a {
     color: #fff;
     margin-right: .5em;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
 
 @media screen and (max-width: 667px) {

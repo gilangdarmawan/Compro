@@ -16,67 +16,87 @@ items:
         items:
             -
                 title: 'ICT Platform List'
-                nesting: ''
-                type: blog-post
-                url: ''
+                type: cms-page
                 code: ''
-                reference: '4'
-                cmsPage: ict-platform-post
-                replace: ''
+                reference: ict-platform-post
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
     -
         title: 'Digital Platform'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: '404'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Business Solution'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: '404'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Digitize Thing'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: '404'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Partner
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: '404'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Company
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: '404'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'About Us'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: '404'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''

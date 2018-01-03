@@ -1,8 +1,30 @@
-1514887648a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:831:"[viewBag]
+1514962274a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1718:"[viewBag]
 
 [staticMenu]
 code = "mainMenu"
 ==
+{% import _self as nav %}
+
+{% macro render_menu(items) %}
+    {% import _self as nav %}
+
+    {% for item in items %}
+        {% if item.items %}
+            <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ item.code ? ('nav.'~item.code)|_ : item.title }} <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    {{ nav.render_menu(item.items) }}
+                </ul>
+            </li>
+        {% else %}
+            <li class="nav-item {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}" class="nav-link">{{ item.code ? ('nav.'~item.code)|_ : item.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
 <!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
     <div class="container">
@@ -13,15 +35,35 @@ code = "mainMenu"
         </div>
         <div class="collapse navbar-collapse navbar-main-collapse">
             {% if staticMenu.menuItems %}
-            <ul class="navbar-nav ml-auto">
-                {% for item in staticMenu.menuItems %}
-                <li class="nav-item"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
-                {% endfor %}
-            </ul>
+                <ul class="navbar-nav ml-auto">
+                    {{ nav.render_menu(staticMenu.menuItems) }}
+                </ul>
             {% endif %}
         </div>
     </div>
-</nav>";s:5:"mtime";i:1514862252;s:6:"markup";s:781:"<!-- Nav -->
+</nav>";s:5:"mtime";i:1514954882;s:6:"markup";s:1668:"{% import _self as nav %}
+
+{% macro render_menu(items) %}
+    {% import _self as nav %}
+
+    {% for item in items %}
+        {% if item.items %}
+            <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ item.code ? ('nav.'~item.code)|_ : item.title }} <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    {{ nav.render_menu(item.items) }}
+                </ul>
+            </li>
+        {% else %}
+            <li class="nav-item {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}" class="nav-link">{{ item.code ? ('nav.'~item.code)|_ : item.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+<!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -31,11 +73,9 @@ code = "mainMenu"
         </div>
         <div class="collapse navbar-collapse navbar-main-collapse">
             {% if staticMenu.menuItems %}
-            <ul class="navbar-nav ml-auto">
-                {% for item in staticMenu.menuItems %}
-                <li class="nav-item"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
-                {% endfor %}
-            </ul>
+                <ul class="navbar-nav ml-auto">
+                    {{ nav.render_menu(staticMenu.menuItems) }}
+                </ul>
             {% endif %}
         </div>
     </div>
