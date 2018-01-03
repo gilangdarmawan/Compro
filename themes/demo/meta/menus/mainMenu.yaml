@@ -2,20 +2,34 @@ name: mainMenu
 items:
     -
         title: 'ICT Platform'
-        nesting: ''
         type: cms-page
-        url: ''
         code: ''
         reference: ict-platform
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
         items:
             -
-                title: 'ICT Platform List'
+                title: 'EBA (Enterprise Business Application)'
+                type: cms-page
+                code: ''
+                reference: ict-platform-post
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'NGI (Next Generation Enterprise Infrastructure)'
+                type: cms-page
+                code: ''
+                reference: ict-platform-post
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'MO & BPO (Managed Operation & Business Process Out Sourcing)'
                 type: cms-page
                 code: ''
                 reference: ict-platform-post

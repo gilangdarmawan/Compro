@@ -93,20 +93,45 @@ class __TwigTemplate_2568a0d81fcbdea730a410de76f64e3f6e439830679d4e6671478ce3bc8
         // line 42
         echo "    </footer>
     <!-- Scripts -->
-    <script src=\"";
+    <!-- <script src=\"";
         // line 44
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
     <script src=\"";
         // line 45
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/vendor/bootstrap.js");
-        echo "\"></script>
+        echo "\"></script> -->
+    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js\" integrity=\"sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4\" crossorigin=\"anonymous\"></script>
     <script src=\"";
-        // line 46
+        // line 49
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/javascript/app.js");
         echo "\"></script>
+    <script>
+        \$(document).ready(function() {
+            // executes when HTML-Document is loaded and DOM is ready
+
+            // breakpoint and up  
+            \$(window).resize(function() {
+                if (\$(window).width() >= 980) {
+                    // when you hover a toggle show its dropdown menu
+                    \$(\".navbar .dropdown-toggle\").hover(function() {
+                        \$(this).parent().toggleClass(\"show\");
+                        \$(this).parent().find(\".dropdown-menu\").toggleClass(\"show\");
+                    });
+                    // hide the menu when the mouse leaves the dropdown
+                    \$(\".navbar .dropdown-menu\").mouseleave(function() {
+                        \$(this).removeClass(\"show\");
+                    });
+                    // do something here
+                }
+            });
+            // document ready  
+        });
+    </script>
     ";
-        // line 47
+        // line 72
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
@@ -116,7 +141,7 @@ class __TwigTemplate_2568a0d81fcbdea730a410de76f64e3f6e439830679d4e6671478ce3bc8
         echo " ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 48
+        // line 73
         echo "</body>
 
 </html>";
@@ -134,7 +159,7 @@ class __TwigTemplate_2568a0d81fcbdea730a410de76f64e3f6e439830679d4e6671478ce3bc8
 
     public function getDebugInfo()
     {
-        return array (  120 => 48,  110 => 47,  106 => 46,  102 => 45,  98 => 44,  94 => 42,  90 => 41,  85 => 38,  83 => 37,  79 => 35,  75 => 34,  55 => 16,  50 => 15,  45 => 13,  41 => 12,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  145 => 73,  135 => 72,  109 => 49,  102 => 45,  98 => 44,  94 => 42,  90 => 41,  85 => 38,  83 => 37,  79 => 35,  75 => 34,  55 => 16,  50 => 15,  45 => 13,  41 => 12,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -182,9 +207,34 @@ class __TwigTemplate_2568a0d81fcbdea730a410de76f64e3f6e439830679d4e6671478ce3bc8
         {% partial 'site/footer' %}
     </footer>
     <!-- Scripts -->
-    <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
-    <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>
+    <!-- <script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
+    <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script> -->
+    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js\" integrity=\"sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4\" crossorigin=\"anonymous\"></script>
     <script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
+    <script>
+        \$(document).ready(function() {
+            // executes when HTML-Document is loaded and DOM is ready
+
+            // breakpoint and up  
+            \$(window).resize(function() {
+                if (\$(window).width() >= 980) {
+                    // when you hover a toggle show its dropdown menu
+                    \$(\".navbar .dropdown-toggle\").hover(function() {
+                        \$(this).parent().toggleClass(\"show\");
+                        \$(this).parent().find(\".dropdown-menu\").toggleClass(\"show\");
+                    });
+                    // hide the menu when the mouse leaves the dropdown
+                    \$(\".navbar .dropdown-menu\").mouseleave(function() {
+                        \$(this).removeClass(\"show\");
+                    });
+                    // do something here
+                }
+            });
+            // document ready  
+        });
+    </script>
     {% framework extras %} {% scripts %}
 </body>
 

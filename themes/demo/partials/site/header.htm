@@ -11,8 +11,8 @@ code = "mainMenu"
     {% for item in items %}
         {% if item.items %}
             <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
-                <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ item.code ? ('nav.'~item.code)|_ : item.title }} <span class="caret"></span>
+                <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                    {{ item.code ? ('nav.'~item.code)|_ : item.title }}
                 </a>
                 <ul class="dropdown-menu">
                     {{ nav.render_menu(item.items) }}

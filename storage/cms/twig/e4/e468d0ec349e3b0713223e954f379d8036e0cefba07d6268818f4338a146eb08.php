@@ -85,11 +85,11 @@ class __TwigTemplate_f25b2096e8fc3359f6719c30c9b86ca3e8093cd67ed2712eb7445546bc4
                 <a href=\"";
                     // line 9
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "url", array()), "html", null, true);
-                    echo "\" class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    echo "\" class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\">
                     ";
                     // line 10
                     echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "code", array())) ? (call_user_func_array($this->env->getFilter('_')->getCallable(), array(("nav." . twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "code", array()))))) : (twig_get_attribute($this->env, $this->getSourceContext(), $context["item"], "title", array()))), "html", null, true);
-                    echo " <span class=\"caret\"></span>
+                    echo "
                 </a>
                 <ul class=\"dropdown-menu\">
                     ";
@@ -153,8 +153,8 @@ class __TwigTemplate_f25b2096e8fc3359f6719c30c9b86ca3e8093cd67ed2712eb7445546bc4
     {% for item in items %}
         {% if item.items %}
             <li class=\"nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}\">
-                <a href=\"{{ item.url }}\" class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                    {{ item.code ? ('nav.'~item.code)|_ : item.title }} <span class=\"caret\"></span>
+                <a href=\"{{ item.url }}\" class=\"nav-link dropdown-toggle\" role=\"button\" data-toggle=\"dropdown\">
+                    {{ item.code ? ('nav.'~item.code)|_ : item.title }}
                 </a>
                 <ul class=\"dropdown-menu\">
                     {{ nav.render_menu(item.items) }}
