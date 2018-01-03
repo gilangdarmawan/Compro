@@ -3,6 +3,8 @@ url = "/ict-platform/:id"
 layout = "master"
 description = "Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by our strategic alliance with world leading technology companies."
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 child_of = "ict-platform"
 hide_crumb = 0
 remove_crumb_trail = 0
@@ -19,6 +21,15 @@ identifierValue = "{{ :id }}"
 modelKeyColumn = "id"
 displayColumn = "id"
 notFoundMessage = "Record not found"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "EBA"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "ict-platform-post"
+postPage = "details"
 ==
 {% partial 'site/title' %}
 {% component 'breadcrumbs' %}
@@ -29,9 +40,22 @@ notFoundMessage = "Record not found"
 <div class="container">
     {% if record %}
     <h3>{{ record.title }}</h3>
-    <img src="{{ record.iconslider.path }}" alt=""> 
-    <p>{{ record.post_date }}</p>
+    <!-- <img src="{{ record.iconslider.path }}" alt="">  -->
+    <!-- <p>{{ record.post_date }}</p> -->
     <p>{{ record.desc | raw }}</p>
-    <p>Category : {{ record.category }}</p>
+    <!-- <p>Category : {{ record.category }}</p> -->
     {% else %} {{ notFoundMessage }} {% endif %}
+    
+    {% set posts = blogPosts.posts %}
+
+    <ul class="post-list">
+        {% for post in posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <p class="excerpt">{{ post.summary|raw }}</p>
+            </li>
+        {% else %}
+            <li class="no-data">{{ noPostsMessage }}</li>
+        {% endfor %}
+    </ul>
 </div>
