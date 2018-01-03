@@ -2,9 +2,13 @@ name: mainMenu
 items:
     -
         title: 'ICT Platform'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: ict-platform
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -12,31 +16,95 @@ items:
         items:
             -
                 title: 'EBA (Enterprise Business Application)'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: ict-platform-post
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+                items:
+                    -
+                        title: 'Enterprise Resource Planning'
+                        nesting: ''
+                        type: url
+                        url: /
+                        code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+                    -
+                        title: 'Customer Relationship Management'
+                        type: url
+                        url: /
+                        code: ''
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+                    -
+                        title: 'Human Resource Management'
+                        type: url
+                        url: /
+                        code: ''
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
             -
                 title: 'NGI (Next Generation Enterprise Infrastructure)'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: ict-platform-post
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+                items:
+                    -
+                        title: 'IaaS & PaaS'
+                        type: url
+                        url: /
+                        code: ''
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
             -
                 title: 'MO & BPO (Managed Operation & Business Process Out Sourcing)'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: ict-platform-post
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+                items:
+                    -
+                        title: 'Unified Data Center Management'
+                        type: url
+                        url: /
+                        code: ''
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
     -
         title: 'Digital Platform'
         nesting: ''

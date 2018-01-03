@@ -108,6 +108,8 @@ a:hover {
 
 
 
+
+
 /* HOME PAGE */
 
 .home-offer {
@@ -171,6 +173,8 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+
 
 
 
@@ -325,6 +329,8 @@ a:hover {
 
 
 
+
+
 /*business solution*/
 
 .bs-div .agit-csp-card {
@@ -377,9 +383,17 @@ a:hover {
     margin-right: .5em;
 }
 
+.breadcrumb>li {
+    display: inline-block;
+}
 
-.navbar .dropdown-menu {
-    border: none;
+.breadcrumb>li+li:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    content: "\f105";
 }
 
 
@@ -392,21 +406,44 @@ a:hover {
         position: static;
     }
 
+    .dropdown-toggle::after {
+        content: none;
+    }
+
     .navbar .dropdown-menu {
         width: 100%;
         left: 0;
         right: 0;
+        border: none;
+        border-radius: 0;
+        background-color: #252525;
+        padding: 1rem;
     }
 
     /* shows the dropdown menu on hover */
     .navbar .dropdown:hover .dropdown-menu,
     .navbar .dropdown .dropdown-menu:hover {
-        display: block!important;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navbar .dropdown .dropdown-menu .dropdown-level-2 {
+        margin: 1rem 1.2rem;
+        max-width: 298px;
+        font-weight: bold;
+    }
+    .navbar .dropdown .dropdown-menu .dropdown-level-2 ul {
+        -webkit-padding-start: 0;
+        -moz-padding-start: 0;
+        margin-top: 1rem;
+        font-weight: normal;
     }
 
-    .navbar .dropdown-menu {
-        border-radius: 0;
-        background-color: #252525;
+    .navbar .dropdown .dropdown-menu a {
+        padding: 0;
+        color: #fff;
+        font-size: .85rem;
     }
 }
 

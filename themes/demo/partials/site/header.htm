@@ -9,22 +9,80 @@ code = "mainMenu"
     {% import _self as nav %}
 
     {% for item in items %}
-        {% if item.items %}
-            <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
-                <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
-                    {{ item.code ? ('nav.'~item.code)|_ : item.title }}
-                </a>
-                <ul class="dropdown-menu">
-                    {{ nav.render_menu(item.items) }}
-                </ul>
-            </li>
+        <!-- {% if item.items %}
+
+            {% for subitem in item.items %} 
+
+                {% if subitem.item %}
+                    <li>
+                        <a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                    </li>
+                {% else %}
+
+                    <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                        <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            {{ item.code ? ('nav.'~item.code)|_ : item.title }}
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        </ul>                
+                    </li>
+                {% endif %}
+
+            {% endfor %}
+
         {% else %}
             <li class="nav-item {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
                 <a href="{{ item.url }}" class="nav-link">{{ item.code ? ('nav.'~item.code)|_ : item.title }}</a>
             </li>
-        {% endif %}
+        {% endif %}  -->       
+        
+        <!-- level 1 -->
+        {% if item.items %}
+        <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+            <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                {{ item.code ? ('nav.'~item.code)|_ : item.title }}
+            </a>
+
+            <ul class="dropdown-menu">
+                <!-- Checking for Level 2 -->
+                {% if item.items %}
+                    {% for subitem in item.items %}
+                        <li class="dropdown-level-2"> <!-- level 2 -->
+                            <a href="{{ subitem.url }}">{{ subitem.title }}</a> 
+
+                            <!-- Checking for Level 3 -->
+                            {% if subitem.items %}
+                                <ul>
+                                    {% for subitem2 in subitem.items %}
+                                        <li class="dropdown-level-3"> <!-- level 3 -->
+                                            <a href="{{ subitem2.url }}">{{ subitem2.title }}</a> 
+                                        </li>                                
+                                    {% endfor %}
+                                </ul>                            
+                            {% endif %}
+                        </li>
+
+                        
+                    {% endfor %}
+                {% endif %}
+                
+            </ul>                
+        </li>
+        {% else %}
+            <li class="nav-item {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}" class="nav-link">{{ item.code ? ('nav.'~item.code)|_ : item.title }}</a>
+            </li>
+        {% endif %}  
+        
     {% endfor %}
 {% endmacro %}
+
+
+
 <!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
     <div class="container">

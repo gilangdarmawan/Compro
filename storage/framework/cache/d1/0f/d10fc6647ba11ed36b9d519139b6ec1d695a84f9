@@ -1,4 +1,4 @@
-1514966704a:1:{s:13:"news-post.htm";a:15:{s:8:"fileName";s:13:"news-post.htm";s:7:"content";s:1217:"title = "News List"
+1514976371a:1:{s:13:"news-post.htm";a:15:{s:8:"fileName";s:13:"news-post.htm";s:7:"content";s:1217:"title = "News List"
 url = "/news/:slug"
 layout = "master"
 is_hidden = 0
