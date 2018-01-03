@@ -43,18 +43,26 @@ items:
                             isExternal: '0'
                     -
                         title: 'Customer Relationship Management'
+                        nesting: ''
                         type: url
                         url: /
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Human Resource Management'
+                        nesting: ''
                         type: url
                         url: /
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -75,9 +83,13 @@ items:
                 items:
                     -
                         title: 'IaaS & PaaS'
+                        nesting: ''
                         type: url
                         url: /
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -98,9 +110,13 @@ items:
                 items:
                     -
                         title: 'Unified Data Center Management'
+                        nesting: ''
                         type: url
                         url: /
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -118,6 +134,43 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+        items:
+            -
+                title: Analytics
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: IOT
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Cloud
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Security
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
     -
         title: 'Business Solution'
         nesting: ''
@@ -131,6 +184,109 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+        items:
+            -
+                title: 'Customer Engagement & CE'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+                items:
+                    -
+                        title: 'Customer Engagement'
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+                    -
+                        title: 'Customer Experiences'
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+            -
+                title: Finance
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Supply Chain, Logistic & Distribution'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+                items:
+                    -
+                        title: 'Supply Chain'
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+                    -
+                        title: Logistic
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+                    -
+                        title: Distribution
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+            -
+                title: 'Talent Management & Workforce Productivity'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+                items:
+                    -
+                        title: 'Talent Management'
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
+                    -
+                        title: 'Workforce Productivity'
+                        type: cms-page
+                        code: ''
+                        reference: '404'
+                        viewBag:
+                            isHidden: '0'
+                            cssClass: ''
+                            isExternal: '0'
     -
         title: 'Digitize Thing'
         nesting: ''
@@ -144,6 +300,70 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+        items:
+            -
+                title: 'My Veego'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Digisquare
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Digiforce
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Digipay
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Mytra
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Product Bundling'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Solutions Bundling'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
     -
         title: Partner
         nesting: ''

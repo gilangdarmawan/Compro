@@ -1,3 +1,5 @@
+storage/*
+storage/framework/*
 node_modules/
 npm-debug.log
 
