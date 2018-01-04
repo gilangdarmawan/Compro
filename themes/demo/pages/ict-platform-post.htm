@@ -11,7 +11,7 @@ remove_crumb_trail = 0
 crumb_disabled = 0
 
 [breadcrumbs]
-main-ol-class = "breadcrumb"
+main-ol-class = "breadcrumb container"
 active-class = "active"
 disabled-class = "disabled"
 
@@ -38,24 +38,35 @@ postPage = "details"
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
 <div class="container">
-    {% if record %}
+    <!-- {% if record %}
     <h3>{{ record.title }}</h3>
-    <!-- <img src="{{ record.iconslider.path }}" alt="">  -->
-    <!-- <p>{{ record.post_date }}</p> -->
+    <img src="{{ record.iconslider.path }}" alt="">
+    <p>{{ record.post_date }}</p>
     <p>{{ record.desc | raw }}</p>
-    <!-- <p>Category : {{ record.category }}</p> -->
-    {% else %} {{ notFoundMessage }} {% endif %}
-    
+    <p>Category : {{ record.category }}</p>
+    {% else %} {{ notFoundMessage }} {% endif %} -->
     {% set posts = blogPosts.posts %}
-
-    <ul class="post-list">
+    <div class="row my-5 justify-content-center">
         {% for post in posts %}
-            <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <p class="excerpt">{{ post.summary|raw }}</p>
-            </li>
+        <div class="col-md-3 col-12 py-3">
+            <div class="agit-nofill-card">
+                <div class="cardbox">
+                    <div class="original">
+                        <div class="text">
+                            <div>{{ post.title }}</div>
+                        </div>
+                    </div>
+                    <div class="on-hover">
+                        {{ html_limit(post.summary, 100) | raw }}
+                        <a href="{{ post.url }}" class="btn btn-warning btn-sm">
+                            See More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% else %}
-            <li class="no-data">{{ noPostsMessage }}</li>
+        <h5>{{ noPostsMessage }}</h5>
         {% endfor %}
-    </ul>
+    </div>
 </div>

@@ -134,7 +134,7 @@ a:hover {
     text-align: left;
 }
 
-.slide-section .desc {
+.slide-section .desc, .microsoft-cust-section .desc {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     font-weight: 400;
@@ -147,12 +147,16 @@ a:hover {
     font-weight: 500;
 }
 
-.slide-section {
+.slide-section, .microsoft-cust-section {
     background: url('/compro/storage/app/media/home/slide_div_section.png') no-repeat, url('/compro/storage/app/media/home/slide_div_section_thumb_1.png') no-repeat, url('/compro/storage/app/media/home/slide_div_section_thumb_2.png') no-repeat;
     background-position: center top, calc(50% + 36rem) calc(50% + 1rem), calc(50% - 37rem) calc(50% + 18rem);
     background-size: contain, auto, auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.microsoft-cust-section {
+    background-position: center top, calc(50% + 36rem) calc(50% + 1rem), calc(50% - 37rem) calc(50% + 15rem);
 }
 
 .slide-section .card-img-top {
@@ -175,10 +179,6 @@ a:hover {
 }
 
 
-
-
-
-
 /* Microsoft */
 
 .cardbox {
@@ -189,20 +189,23 @@ a:hover {
     height: auto;
 }
 
-.cardbox .original {
+.agit-csp-card .cardbox .original, .agit-nofill-card .cardbox .original {
     position: relative;
     width: 100%;
-    height: 18em;
-    background: url("/compro/storage/app/media/home/jumbotron.png") center center no-repeat;
     background-size: cover;
     padding: 2em;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cardbox .original:before {
+.agit-csp-card .cardbox .original {
+    color: #fff;    
+    background: url("/compro/storage/app/media/home/jumbotron.png") center center no-repeat;
+    height: 18em;
+}
+
+.agit-csp-card .cardbox .original:before {
     content: '';
     position: absolute;
     top: 0;
@@ -213,12 +216,23 @@ a:hover {
     opacity: .6;
 }
 
+.agit-nofill-card .cardbox {
+    border-radius: 5px;
+}
+
+.agit-nofill-card .cardbox .original {
+    border: 1px solid #e1e1e1;
+    height: 16em;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
 .cardbox .original .text {
     position: relative;
     font-weight: 500;
 }
 
-.agit-csp-card .on-hover {
+.agit-csp-card .on-hover, .agit-nofill-card .on-hover {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -226,7 +240,6 @@ a:hover {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #f79021;
     color: #fff;
     padding: 1em;
     transform: translateY(-100%);
@@ -239,7 +252,17 @@ a:hover {
     justify-content: center;
 }
 
-.agit-csp-card .cardbox:hover .on-hover {
+.agit-csp-card .on-hover {
+    background-color: #f79021;    
+}
+
+.agit-nofill-card .on-hover {
+    background-color: #6c1b42;
+    opacity: .9;
+    flex-direction: column;    
+}
+
+.agit-csp-card .cardbox:hover .on-hover, .agit-nofill-card .cardbox:hover .on-hover {
     transform: translateY(0);
 }
 
@@ -251,6 +274,12 @@ a:hover {
 .agit-csp-card .on-hover a:hover {
     color: #6c1a42;
 }
+
+/* .agit-nofill-card .on-hover a {
+    color: #f79021;
+    text-decoration: none;
+    font-weight: 500;
+} */
 
 .pns .nav-pills .nav-link {
     background-color: #fff;
@@ -291,6 +320,8 @@ a:hover {
     transition: all .15s ease-out;
     -webkit-box-shadow: 0 5px 20px -5px rgba(50, 50, 93, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.08);
     box-shadow: 0 5px 20px -5px rgba(50, 50, 93, 0.12), 0 3px 4px -2px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin: 1rem;
 }
 
 .page-content .card-deck .card:hover {
@@ -385,6 +416,7 @@ a:hover {
 
 .breadcrumb>li {
     display: inline-block;
+    font-size: .875rem;
 }
 
 .breadcrumb>li+li:before {
@@ -394,6 +426,7 @@ a:hover {
     text-decoration: inherit;
     -webkit-font-smoothing: antialiased;
     content: "\f105";
+    margin: .5em;
 }
 
 
@@ -415,9 +448,12 @@ a:hover {
         left: 0;
         right: 0;
         border: none;
+        border-bottom: .2rem solid #f79021;
         border-radius: 0;
         background-color: #252525;
         padding: 1rem;
+        margin:0;
+        background-clip: border-box;
     }
 
     /* shows the dropdown menu on hover */

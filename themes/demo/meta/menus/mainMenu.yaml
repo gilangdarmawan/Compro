@@ -16,13 +16,9 @@ items:
         items:
             -
                 title: 'EBA (Enterprise Business Application)'
-                nesting: ''
-                type: cms-page
-                url: ''
+                type: url
+                url: ict-platform/2
                 code: ''
-                reference: ict-platform-post
-                cmsPage: ''
-                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -30,13 +26,10 @@ items:
                 items:
                     -
                         title: 'Enterprise Resource Planning'
-                        nesting: ''
-                        type: url
-                        url: /
+                        type: blog-post
                         code: ''
-                        reference: ''
-                        cmsPage: ''
-                        replace: ''
+                        reference: '8'
+                        cmsPage: details
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -137,36 +130,52 @@ items:
         items:
             -
                 title: Analytics
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: IOT
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: Cloud
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: Security
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -187,9 +196,13 @@ items:
         items:
             -
                 title: 'Customer Engagement & CE'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -197,36 +210,52 @@ items:
                 items:
                     -
                         title: 'Customer Engagement'
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Customer Experiences'
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
             -
                 title: Finance
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'Supply Chain, Logistic & Distribution'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -234,36 +263,52 @@ items:
                 items:
                     -
                         title: 'Supply Chain'
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: Logistic
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: Distribution
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
             -
                 title: 'Talent Management & Workforce Productivity'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -271,18 +316,26 @@ items:
                 items:
                     -
                         title: 'Talent Management'
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Workforce Productivity'
+                        nesting: ''
                         type: cms-page
+                        url: ''
                         code: ''
                         reference: '404'
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -303,63 +356,91 @@ items:
         items:
             -
                 title: 'My Veego'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: Digisquare
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: Digiforce
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: Digipay
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: Mytra
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'Product Bundling'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'Solutions Bundling'
+                nesting: ''
                 type: cms-page
+                url: ''
                 code: ''
                 reference: '404'
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''

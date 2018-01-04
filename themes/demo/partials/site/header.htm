@@ -43,7 +43,7 @@ code = "mainMenu"
         <!-- level 1 -->
         {% if item.items %}
         <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
-            <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+            <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-hover="dropdown">
                 {{ item.code ? ('nav.'~item.code)|_ : item.title }}
             </a>
 
