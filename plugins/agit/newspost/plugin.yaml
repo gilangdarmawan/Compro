@@ -1,0 +1,6 @@
+plugin:
+    name: 'agit.newspost::lang.plugin.name'
+    description: 'agit.newspost::lang.plugin.description'
+    author: Agit
+    icon: oc-icon-plus
+    homepage: ''

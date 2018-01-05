@@ -1,0 +1,56 @@
+fields:
+    title_id:
+        label: 'Title (Indonesia)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    title_en:
+        label: 'Title (English)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    alias_id:
+        label: 'Alias (Indonesia)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    alias_en:
+        label: 'Alias (English)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    topic_id:
+        label: 'Topic Id'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    meta_title_id:
+        label: 'Meta Title (Indonesia)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    meta_title_en:
+        label: 'Meta Title (English)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    meta_description_id:
+        label: 'Meta Description (Indonesia)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    meta_description_en:
+        label: 'Meta Description (English)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    meta_image:
+        label: 'Meta Image'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    api_type:
+        label: 'API Type'
+        oc.commentPosition: ''
+        span: full
+        type: text

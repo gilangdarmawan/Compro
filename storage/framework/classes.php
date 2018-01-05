@@ -153,4 +153,8 @@
   'jorgeandrade\\subscribe\\Controllers\\subscribers' => 'plugins\\jorgeandrade\\subscribe\\controllers\\subscribers.php',
   'peterhegman\\slickslider\\Controllers\\slideshows' => 'plugins\\peterhegman\\slickslider\\controllers\\slideshows.php',
   'PeterHegman\\SlickSlider\\Models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
+  'agit\\newspost\\Plugin' => 'plugins\\agit\\newspost\\Plugin.php',
+  'rainlab\\translate\\Controllers\\messages' => 'plugins\\rainlab\\translate\\controllers\\messages.php',
+  'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins\\rainlab\\translate\\classes\\ThemeScanner.php',
+  'rainlab\\translate\\Controllers\\locales' => 'plugins\\rainlab\\translate\\controllers\\locales.php',
 );
