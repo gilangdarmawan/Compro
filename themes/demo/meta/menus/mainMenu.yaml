@@ -16,9 +16,13 @@ items:
         items:
             -
                 title: 'EBA (Enterprise Business Application)'
+                nesting: ''
                 type: url
                 url: ict-platform/2
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -26,10 +30,13 @@ items:
                 items:
                     -
                         title: 'Enterprise Resource Planning'
+                        nesting: ''
                         type: blog-post
+                        url: ''
                         code: ''
                         reference: '8'
                         cmsPage: details
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -472,14 +479,10 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'About Us'
-        nesting: ''
+        title: 'Contact Us'
         type: cms-page
-        url: ''
         code: ''
-        reference: '404'
-        cmsPage: ''
-        replace: ''
+        reference: contact
         viewBag:
             isHidden: '0'
             cssClass: ''
