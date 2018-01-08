@@ -16,12 +16,12 @@ localeUrl[id] = "/contact-agit"
 ==
 {% partial 'site/title' %}
 <div class="container">
-    <div class="row mx-0 my-3">
+    <div class="row mx-0 my-5">
         <div class="col-6">
             <p>For further information and enquiries, kindly contact us at:</p>
             <div class="row">
                 <div class="col-1 pr-0">
-                	<i class="fa fa-map-marker fa-lg"></i>
+                    <i class="fa fa-map-marker fa-lg text-warning"></i>
                 </div>
                 <div class="col-11 pl-0">
                     <p>
@@ -32,7 +32,7 @@ localeUrl[id] = "/contact-agit"
                     </p>
                 </div>
                 <div class="col-1 pr-0">
-                	<i class="fa fa-phone"></i>
+                    <i class="fa fa-phone text-warning"></i>
                 </div>
                 <div class="col-11 pl-0">
                     <p>
@@ -41,17 +41,20 @@ localeUrl[id] = "/contact-agit"
                     </p>
                 </div>
                 <div class="col-1 pr-0">
-                	<i class="fa fa-envelope"></i>
+                    <i class="fa fa-envelope text-warning"></i>
                 </div>
                 <div class="col-11 pl-0">
                     <p>
                         E-Mail: marketing@ag-it.com
                     </p>
                 </div>
+                <div class="col-12">
+                	<p>Or you can contact us by filling our form below. Please provide your business industry information to help us assiging the right Business Consultant for you.</p>
+                </div>
             </div>
         </div>
-        <div class="col-6">
-            Say Something
+        <div class="col-5 ml-auto">
+            {% partial 'site/contact-form' %}
         </div>
     </div>
 </div>
