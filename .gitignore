@@ -1,6 +1,5 @@
-storage/*
-storage/framework/*
-storage/cms/*
+storage/
+storage/framework/cache
 node_modules/
 npm-debug.log
 

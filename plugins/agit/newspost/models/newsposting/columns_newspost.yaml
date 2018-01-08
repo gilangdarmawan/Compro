@@ -1,0 +1,11 @@
+columns:
+    title_id:
+        label: 'Title (ID)'
+        type: text
+        searchable: true
+        sortable: true
+    title_en:
+        label: 'Title (EN)'
+        type: text
+        searchable: true
+        sortable: true
