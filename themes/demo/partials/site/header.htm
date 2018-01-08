@@ -43,7 +43,7 @@ code = "mainMenu"
         <!-- level 1 -->
         {% if item.items %}
         <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
-            <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+            <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-hover="dropdown">
                 {{ item.code ? ('nav.'~item.code)|_ : item.title }}
             </a>
 
@@ -87,7 +87,7 @@ code = "mainMenu"
 <nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{ 'home'|page }}">
+            <a class="navbar-brand py-2" href="{{ 'home'|page }}">
               <img src="/compro/storage/app/media/company-logo/agit-logo.png" alt="logo">
             </a>
         </div>
