@@ -153,4 +153,8 @@
   'jorgeandrade\\subscribe\\Controllers\\subscribers' => 'plugins\\jorgeandrade\\subscribe\\controllers\\subscribers.php',
   'peterhegman\\slickslider\\Controllers\\slideshows' => 'plugins\\peterhegman\\slickslider\\controllers\\slideshows.php',
   'PeterHegman\\SlickSlider\\Models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
+  'indikator\\backend\\Plugin' => 'plugins\\indikator\\backend\\Plugin.php',
+  'indikator\\backend\\Controllers\\trash' => 'plugins\\indikator\\backend\\controllers\\trash.php',
+  'Indikator\\Backend\\Models\\Trash' => 'plugins\\indikator\\backend\\models\\Trash.php',
+  'Indikator\\Backend\\ReportWidgets\\Cache' => 'plugins\\indikator\\backend\\reportwidgets\\Cache.php',
 );
