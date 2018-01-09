@@ -9,67 +9,27 @@ code = "mainMenu"
     {% import _self as nav %}
 
     {% for item in items %}
-        <!-- {% if item.items %}
-
-            {% for subitem in item.items %} 
-
-                {% if subitem.item %}
-                    <li>
-                        <a href="{{ subitem.url }}">{{ subitem.title }}</a>
-                    </li>
-                {% else %}
-
-                    <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
-                        <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
-                            {{ item.code ? ('nav.'~item.code)|_ : item.title }}
-                        </a>
-
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="{{ item.url }}">{{ item.title }}</a>
-                            </li>
-                        </ul>                
-                    </li>
-                {% endif %}
-
-            {% endfor %}
-
-        {% else %}
-            <li class="nav-item {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
-                <a href="{{ item.url }}" class="nav-link">{{ item.code ? ('nav.'~item.code)|_ : item.title }}</a>
-            </li>
-        {% endif %}  -->       
-        
-        <!-- level 1 -->
         {% if item.items %}
         <li class="nav-item dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
             <a href="{{ item.url }}" class="nav-link dropdown-toggle" role="button" data-hover="dropdown">
                 {{ item.code ? ('nav.'~item.code)|_ : item.title }}
             </a>
-
             <ul class="dropdown-menu">
-                <!-- Checking for Level 2 -->
                 {% if item.items %}
                     {% for subitem in item.items %}
-                        <li class="dropdown-level-2"> <!-- level 2 -->
-                            <a href="{{ subitem.url }}">{{ subitem.title }}</a> 
-
-                            <!-- Checking for Level 3 -->
+                        <li class="dropdown-level-2">
+                            <a href="{{ subitem.url }}">{{ subitem.title }}</a>
                             {% if subitem.items %}
                                 <ul>
                                     {% for subitem2 in subitem.items %}
-                                        <li class="dropdown-level-3"> <!-- level 3 -->
                                             <a href="{{ subitem2.url }}">{{ subitem2.title }}</a> 
                                         </li>                                
                                     {% endfor %}
                                 </ul>                            
                             {% endif %}
-                        </li>
-
-                        
+                        </li>                        
                     {% endfor %}
-                {% endif %}
-                
+                {% endif %}                
             </ul>                
         </li>
         {% else %}
@@ -91,11 +51,17 @@ code = "mainMenu"
               <img src="/compro/storage/app/media/company-logo/agit-logo.png" alt="logo">
             </a>
         </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
+        <button class="navbar-toggler" type="button" id="navToggle">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse navbar-main-collapse" id="navToggleContent">
+            <button class="btn" type="button" id="navToggleClose">
+                <i class="fa fa-times-circle"></i>
+            </button>
             {% if staticMenu.menuItems %}
-                <ul class="navbar-nav ml-auto">
-                    {{ nav.render_menu(staticMenu.menuItems) }}
-                </ul>
+            <ul class="navbar-nav ml-auto">
+                {{ nav.render_menu(staticMenu.menuItems) }}
+            </ul>
             {% endif %}
         </div>
     </div>

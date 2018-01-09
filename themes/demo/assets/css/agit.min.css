@@ -60,9 +60,14 @@ a:hover {
     background: #fff;
 }
 
+.navbar-brand img {
+    max-width: 84px;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 2rem 1rem;
     font-weight: 500;
+    text-align: center;
 }
 
 #accessDiv .carousel-caption {
@@ -78,6 +83,10 @@ a:hover {
     text-align: left;
     color: #525252;
     border: none;
+}
+
+#layout-content {
+    min-height: calc(100vh - 541px);
 }
 
 .page-title {
@@ -105,6 +114,23 @@ a:hover {
     position: relative;
     text-align: center;
 }
+
+.page-title .container h4 {
+        text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.page-title .container h6 {
+    font-weight: normal;
+        margin-top: 1.4rem;
+}
+
+
+
+
+
+
+
 
 
 
@@ -193,6 +219,14 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
 /* Microsoft */
 
 .cardbox {
@@ -236,10 +270,11 @@ a:hover {
 }
 
 .agit-nofill-card .cardbox .original {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #f79021;
     height: 16em;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    border-radius: 5px;
 }
 
 .cardbox .original .text {
@@ -291,6 +326,14 @@ a:hover {
 .agit-csp-card .on-hover a:hover {
     color: #6c1a42;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -424,6 +467,14 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
 /*business solution*/
 
 .bs-div .agit-csp-card {
@@ -498,6 +549,14 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
 /* breakpoint and up - mega dropdown styles */
 
 @media screen and (min-width: 992px) {
@@ -549,6 +608,66 @@ a:hover {
         color: #fff;
         font-size: .85rem;
     }
+    #navToggleClose {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    #navToggle {
+        padding: .25rem;
+        color: #6c1a42;
+        font-size: 1.6rem;
+        border: none;
+    }
+
+    #navToggle:focus {
+        outline: none;
+    }
+
+    #navToggleContent {
+        height: 100vh;
+        background: rgba(108, 26, 66, 0.9);
+        padding: 25px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        overflow: scroll;
+    }
+    #navToggleContent .navbar-nav {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #navToggleContent ul li a {
+        padding: 1rem 0;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #navToggleContent ul li a.dropdown-toggle::after {
+        display: none;
+    }
+    #navToggleClose {
+        display: block;
+        padding: 0;
+        position: absolute;
+        font-size: 1.6rem;
+        color: #fff;
+        line-height: 0;
+        background: no-repeat;
+        right: 20px;
+    }
+    #navToggleClose:focus {
+        border: none;
+        outline: none;
+    }
 }
 
 @media screen and (max-width: 667px) {
@@ -557,16 +676,6 @@ a:hover {
         max-width: 155px;
         min-width: 0;
     }
-    #navToggleContent {
-    height: 100vh;
-    background: rgba(71, 95, 157, 0.9);
-    padding: 25px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
     /* home */
     #accessDiv .carousel-item img {
         height: 50vw;
@@ -588,13 +697,17 @@ a:hover {
         color: #fff;
         font-size: 1rem;
     }
+    .page-content .partner-div a img {
+        max-width: 80px;
+    }
     .home-offer {
         background-image: none;
     }
     .home-offer .img-fluid {
         display: block;
     }
-    .slide-section, .microsoft-cust-section {
+    .slide-section,
+    .microsoft-cust-section {
         background-size: auto;
     }
     .page-content .container {
@@ -603,5 +716,26 @@ a:hover {
     }
     .footer-bg {
         padding: 2em 1em;
+    }
+    .footer-link {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .footer-link img {
+        display: none;
+    }
+    .social-link {
+        text-align: center;
+    }
+    .footer-copy {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: .8rem;
+        font-weight: normal;
+    }
+    .footer-copy img {
+        max-width: 103px;
+        margin-bottom: 1rem;
     }
 }
