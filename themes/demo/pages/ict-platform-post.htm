@@ -32,12 +32,13 @@ categoryPage = "ict-platform-post"
 postPage = "details"
 ==
 {% partial 'site/title' %}
-{% component 'breadcrumbs' %}
+
 {% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
 <div class="container">
+    {% component 'breadcrumbs' %}
     <!-- {% if record %}
     <h3>{{ record.title }}</h3>
     <img src="{{ record.iconslider.path }}" alt="">

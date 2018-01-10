@@ -11,10 +11,21 @@ description = "Layout for Microsoft page"
     <meta name="author" content="AGIT">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="AGIT">
-    <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/agit-logo.png'|theme }}">
     <link href="{{ 'assets/css/bootstrap.min.css'|theme }}" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ 'assets/css/agit.min.css'|theme }}" rel="stylesheet"> {% styles %}
+    <link href="{{ 'assets/css/agit.min.css'|theme }}" rel="stylesheet">
+    <style type="text/css">
+    .btn-call-to-action {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        cursor: pointer;
+    }
+    </style>
+    {% styles %}
 </head>
 
 <body>
@@ -34,6 +45,9 @@ description = "Layout for Microsoft page"
     <section id="layout-content">
         {% page %}
     </section>
+    <button class="btn btn-warning btn-call-to-action">
+        <i class="fa fa-phone fa-fw"></i>
+    </button>
     <!-- Footer -->
     <footer id="layout-footer">
         {% partial 'site/footer' %}
@@ -41,10 +55,15 @@ description = "Layout for Microsoft page"
     <!-- Scripts -->
     <!-- <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
     <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+    <script>
+    $(".btn-call-to-action").click(function() {
+        $('html,body').animate({ scrollTop: $("#contact-div").offset().top }, 'slow');
+    });
+    </script>
     {% framework extras %} {% scripts %}
 </body>
 

@@ -301,6 +301,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .agit-csp-card .on-hover {
@@ -353,6 +354,7 @@ a:hover {
     height: 60px;
     align-items: center;
     display: flex;
+    border: 2px solid #fff;
 }
 
 .pns .nav-pills .nav-link.active,
@@ -527,6 +529,9 @@ a:hover {
     margin-right: .5em;
 }
 
+.breadcrumb {
+    padding: 0.75rem 1rem 0.75rem 0;
+}
 .breadcrumb>li {
     display: inline-block;
     font-size: .875rem;
@@ -676,6 +681,11 @@ a:hover {
         max-width: 155px;
         min-width: 0;
     }
+    /* microsoft */
+    .pns .nav-pills .nav-link {
+        width: 60px;
+        margin: 0 1rem 2rem;
+    }
     /* home */
     #accessDiv .carousel-item img {
         height: 50vw;
@@ -693,8 +703,11 @@ a:hover {
     #accessDiv .card .card-body {
         padding: 15px 0;
     }
-    #accessDiv .card .card-body .h5 {
+    #accessDiv .card .card-body .h3 {
         color: #fff;
+        font-size: 1rem;
+    }
+    #accessDiv .card .card-body .h4 {
         font-size: 1rem;
     }
     .page-content .partner-div a img {

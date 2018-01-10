@@ -2,6 +2,8 @@ title = "Homepage"
 url = "/"
 layout = "master"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 child_of = "mey_no_parent"
 hide_crumb = 0
 remove_crumb_trail = 0
@@ -15,6 +17,13 @@ noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "news"
 postPage = "news-post"
+
+[formSubscribe]
+urlToUnsubscribe = "unsubscribe"
+urlToProfile = "subscriber-profile"
+geo = "disabled"
+thanksMessage = "Thanks for subscribe!"
+errorMessage = "Email already exists!"
 ==
 {% content 'Home/Landing' %}
 {% content 'Home/Offer' %}
@@ -50,4 +59,25 @@ postPage = "news-post"
     </div>
 </div>
 {% content 'Home/Partners' %}
-{% content 'Home/Subscribe' %}
+<div class="page-content bg-white">
+    <div class="container partners-section">
+        <div class="row align-items-center">
+            <div class="col-md-3 col-12 ml-auto">
+                <div class="h6"><b>Subscribe Us</b> Now</div>
+            </div>
+            <div class="col-md-7 col-12 mr-auto">
+                <form name="form-subscribe-andradedev" id="form-subscribe-andradedev" data-request="{{ formSubscribe }}::onAddSubscriber" data-request-update="'{{formSubscribe}}::alert': '#result'">
+                  <div class="form-row align-items-center">
+                    <div class="col-md-9 col-6">
+                      <input type="email" class="form-control form-control-lg" name="email" placeholder="Your E-mail" required>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <button class="btn btn-outline-warning btn-lg btn-block" form="form-subscribe-andradedev">Subscribe</button>
+                    </div>
+                  </div>
+                </form>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+</div>
