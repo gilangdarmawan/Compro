@@ -20,10 +20,58 @@
   'shahiemseymor\\ckeditor\\Plugin' => 'plugins\\shahiemseymor\\ckeditor\\Plugin.php',
   'vojtasvoboda\\twigextensions\\Plugin' => 'plugins\\vojtasvoboda\\twigextensions\\Plugin.php',
   'RainLab\\Blog\\Classes\\TagProcessor' => 'plugins\\rainlab\\blog\\classes\\TagProcessor.php',
+<<<<<<< HEAD
   'cms\\Controllers\\index' => 'modules\\cms\\controllers\\index.php',
   'RainLab\\Translate\\Behaviors\\TranslatablePageUrl' => 'plugins\\rainlab\\translate\\behaviors\\TranslatablePageUrl.php',
   'RainLab\\Translate\\Classes\\Translator' => 'plugins\\rainlab\\translate\\classes\\Translator.php',
   'RainLab\\Translate\\Models\\Locale' => 'plugins\\rainlab\\translate\\models\\Locale.php',
+=======
+<<<<<<< HEAD
+  'system\\Controllers\\settings' => 'modules\\system\\controllers\\settings.php',
+=======
+  'backend\\Controllers\\index' => 'modules\\backend\\controllers\\index.php',
+>>>>>>> 33d2d01cd58637b94ba0df725597af18bb22bd11
+  'Martin\\Forms\\Models\\Settings' => 'plugins\\martin\\forms\\models\\Settings.php',
+  'Martin\\Forms\\Classes\\BackendHelpers' => 'plugins\\martin\\forms\\classes\\BackendHelpers.php',
+  'Martin\\Forms\\Classes\\UnreadRecords' => 'plugins\\martin\\forms\\classes\\UnreadRecords.php',
+  'Martin\\Forms\\Models\\Record' => 'plugins\\martin\\forms\\models\\Record.php',
+<<<<<<< HEAD
+  'backend\\Controllers\\index' => 'modules\\backend\\controllers\\index.php',
+  'Indikator\\Backend\\ReportWidgets\\Cache' => 'plugins\\indikator\\backend\\reportwidgets\\Cache.php',
+=======
+>>>>>>> 33d2d01cd58637b94ba0df725597af18bb22bd11
+  'RainLab\\Translate\\Classes\\Translator' => 'plugins\\rainlab\\translate\\classes\\Translator.php',
+  'RainLab\\Translate\\Models\\Locale' => 'plugins\\rainlab\\translate\\models\\Locale.php',
+  'RainLab\\Translate\\Classes\\LocaleMiddleware' => 'plugins\\rainlab\\translate\\classes\\LocaleMiddleware.php',
+  'RainLab\\Pages\\Classes\\Controller' => 'plugins\\rainlab\\pages\\classes\\Controller.php',
+  'RainLab\\Pages\\Classes\\Router' => 'plugins\\rainlab\\pages\\classes\\Router.php',
+  'RainLab\\Pages\\Classes\\PageList' => 'plugins\\rainlab\\pages\\classes\\PageList.php',
+  'RainLab\\Pages\\Classes\\Page' => 'plugins\\rainlab\\pages\\classes\\Page.php',
+  'RainLab\\Translate\\Behaviors\\TranslatablePageUrl' => 'plugins\\rainlab\\translate\\behaviors\\TranslatablePageUrl.php',
+  'RainLab\\Translate\\Classes\\TranslatableBehavior' => 'plugins\\rainlab\\translate\\classes\\TranslatableBehavior.php',
+  'RainLab\\Translate\\Behaviors\\TranslatableCmsObject' => 'plugins\\rainlab\\translate\\behaviors\\TranslatableCmsObject.php',
+  'RainLab\\Translate\\Components\\LocalePicker' => 'plugins\\rainlab\\translate\\components\\LocalePicker.php',
+  'RainLab\\Blog\\Components\\Posts' => 'plugins\\rainlab\\blog\\components\\Posts.php',
+  'RainLab\\Translate\\Classes\\EventRegistry' => 'plugins\\rainlab\\translate\\classes\\EventRegistry.php',
+  'RainLab\\Translate\\Models\\Message' => 'plugins\\rainlab\\translate\\models\\Message.php',
+  'RainLab\\Blog\\Models\\Category' => 'plugins\\rainlab\\blog\\models\\Category.php',
+  'RainLab\\Translate\\Behaviors\\TranslatableModel' => 'plugins\\rainlab\\translate\\behaviors\\TranslatableModel.php',
+  'RainLab\\Blog\\Models\\Post' => 'plugins\\rainlab\\blog\\models\\Post.php',
+  'VojtaSvoboda\\TwigExtensions\\Classes\\TimeDiffTranslator' => 'plugins\\vojtasvoboda\\twigextensions\\classes\\TimeDiffTranslator.php',
+  'RainLab\\Location\\Models\\Country' => 'plugins\\rainlab\\location\\models\\Country.php',
+  'RainLab\\Location\\Models\\State' => 'plugins\\rainlab\\location\\models\\State.php',
+  'RainLab\\Pages\\Components\\StaticMenu' => 'plugins\\rainlab\\pages\\components\\StaticMenu.php',
+  'RainLab\\Pages\\Classes\\Menu' => 'plugins\\rainlab\\pages\\classes\\Menu.php',
+  'RainLab\\Pages\\Classes\\MenuItem' => 'plugins\\rainlab\\pages\\classes\\MenuItem.php',
+  'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins\\rainlab\\pages\\classes\\MenuItemReference.php',
+  'RainLab\\Blog\\Components\\Post' => 'plugins\\rainlab\\blog\\components\\Post.php',
+  'Mey\\Breadcrumbs\\Components\\Breadcrumbs' => 'plugins\\mey\\breadcrumbs\\components\\Breadcrumbs.php',
+<<<<<<< HEAD
+=======
+  'Indikator\\Backend\\ReportWidgets\\Cache' => 'plugins\\indikator\\backend\\reportwidgets\\Cache.php',
+>>>>>>> 33d2d01cd58637b94ba0df725597af18bb22bd11
+  'cms\\Controllers\\index' => 'modules\\cms\\controllers\\index.php',
+>>>>>>> 6589e23b07d30d82088f208532a6ef436031111c
   'AnandPatel\\SeoExtension\\Components\\BlogPost' => 'plugins\\anandpatel\\seoextension\\components\\BlogPost.php',
   'AnandPatel\\SeoExtension\\Components\\StaticPage' => 'plugins\\anandpatel\\seoextension\\components\\StaticPage.php',
   'AnandPatel\\SeoExtension\\Components\\CmsPage' => 'plugins\\anandpatel\\seoextension\\components\\CmsPage.php',
@@ -35,6 +83,7 @@
   'Martin\\Forms\\Traits\\FileUploader' => 'plugins\\martin\\forms\\traits\\FileUploader.php',
   'Martin\\Forms\\Components\\UploadForm' => 'plugins\\martin\\forms\\components\\UploadForm.php',
   'Martin\\Forms\\Components\\EmptyForm' => 'plugins\\martin\\forms\\components\\EmptyForm.php',
+<<<<<<< HEAD
   'Mey\\Breadcrumbs\\Components\\Breadcrumbs' => 'plugins\\mey\\breadcrumbs\\components\\Breadcrumbs.php',
   'October\\Demo\\Components\\Todo' => 'plugins\\october\\demo\\components\\Todo.php',
   'RainLab\\Pages\\Components\\StaticMenu' => 'plugins\\rainlab\\pages\\components\\StaticMenu.php',
@@ -43,6 +92,15 @@
   'peterhegman\\slickslider\\models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
   'RainLab\\Blog\\Components\\Post' => 'plugins\\rainlab\\blog\\components\\Post.php',
   'RainLab\\Blog\\Components\\Posts' => 'plugins\\rainlab\\blog\\components\\Posts.php',
+=======
+<<<<<<< HEAD
+  'October\\Demo\\Components\\Todo' => 'plugins\\october\\demo\\components\\Todo.php',
+=======
+>>>>>>> 33d2d01cd58637b94ba0df725597af18bb22bd11
+  'PanaKour\\Translate\\Components\\StaticMenuMultilingual' => 'plugins\\panakour\\translate\\components\\StaticMenuMultilingual.php',
+  'PeterHegman\\SlickSlider\\Components\\Slider' => 'plugins\\peterhegman\\slickslider\\components\\Slider.php',
+  'peterhegman\\slickslider\\models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
+>>>>>>> 6589e23b07d30d82088f208532a6ef436031111c
   'RainLab\\Blog\\Components\\Categories' => 'plugins\\rainlab\\blog\\components\\Categories.php',
   'RainLab\\Blog\\Components\\RssFeed' => 'plugins\\rainlab\\blog\\components\\RssFeed.php',
   'RainLab\\Builder\\Components\\RecordList' => 'plugins\\rainlab\\builder\\components\\RecordList.php',
@@ -50,6 +108,7 @@
   'RainLab\\GoogleAnalytics\\Components\\Tracker' => 'plugins\\rainlab\\googleanalytics\\components\\Tracker.php',
   'RainLab\\Pages\\Components\\StaticPage' => 'plugins\\rainlab\\pages\\components\\StaticPage.php',
   'RainLab\\Pages\\Components\\StaticBreadcrumbs' => 'plugins\\rainlab\\pages\\components\\StaticBreadcrumbs.php',
+<<<<<<< HEAD
   'RainLab\\Translate\\Components\\LocalePicker' => 'plugins\\rainlab\\translate\\components\\LocalePicker.php',
   'RainLab\\Translate\\Components\\AlternateHrefLangElements' => 'plugins\\rainlab\\translate\\components\\AlternateHrefLangElements.php',
   'ShahiemSeymor\\Ckeditor\\Components\\Ckeditor' => 'plugins\\shahiemseymor\\ckeditor\\components\\Ckeditor.php',
@@ -106,4 +165,49 @@
   'martin\\forms\\Controllers\\records' => 'plugins\\martin\\forms\\controllers\\records.php',
   'agit\\agitpost\\Controllers\\post' => 'plugins\\agit\\agitpost\\controllers\\post.php',
   'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
+=======
+  'RainLab\\Translate\\Components\\AlternateHrefLangElements' => 'plugins\\rainlab\\translate\\components\\AlternateHrefLangElements.php',
+  'ShahiemSeymor\\Ckeditor\\Components\\Ckeditor' => 'plugins\\shahiemseymor\\ckeditor\\components\\Ckeditor.php',
+  'rainlab\\blog\\Controllers\\posts' => 'plugins\\rainlab\\blog\\controllers\\posts.php',
+  'RainLab\\Blog\\Models\\PostImport' => 'plugins\\rainlab\\blog\\models\\PostImport.php',
+  'AnandPatel\\WysiwygEditors\\Models\\Settings' => 'plugins\\anandpatel\\wysiwygeditors\\models\\Settings.php',
+  'ShahiemSeymor\\Ckeditor\\Models\\Settings' => 'plugins\\shahiemseymor\\ckeditor\\models\\Settings.php',
+  'RainLab\\Blog\\Models\\PostExport' => 'plugins\\rainlab\\blog\\models\\PostExport.php',
+<<<<<<< HEAD
+  'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
+  'bedard\\debugbar\\Plugin' => 'plugins\\bedard\\debugbar\\Plugin.php',
+  'RainLab\\Translate\\Traits\\MLControl' => 'plugins\\rainlab\\translate\\traits\\MLControl.php',
+  'RainLab\\Translate\\FormWidgets\\MLText' => 'plugins\\rainlab\\translate\\formwidgets\\MLText.php',
+  'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins\\rainlab\\translate\\formwidgets\\MLTextarea.php',
+  'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\BlogMarkdown.php',
+  'RainLab\\Blog\\FormWidgets\\MLBlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\MLBlogMarkdown.php',
+=======
+>>>>>>> 33d2d01cd58637b94ba0df725597af18bb22bd11
+  'rainlab\\builder\\Controllers\\index' => 'plugins\\rainlab\\builder\\controllers\\index.php',
+  'RainLab\\Builder\\Classes\\IndexOperationsBehaviorBase' => 'plugins\\rainlab\\builder\\classes\\IndexOperationsBehaviorBase.php',
+  'RainLab\\Builder\\Behaviors\\IndexPluginOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexPluginOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexDatabaseTableOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexDatabaseTableOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexModelOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexModelOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexModelFormOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexModelFormOperations.php',
+  'RainLab\\Builder\\FormWidgets\\FormBuilder' => 'plugins\\rainlab\\builder\\formwidgets\\FormBuilder.php',
+  'RainLab\\Builder\\Behaviors\\IndexModelListOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexModelListOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexPermissionsOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexPermissionsOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexMenusOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexMenusOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexVersionsOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexVersionsOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexLocalizationOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexLocalizationOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexControllerOperations' => 'plugins\\rainlab\\builder\\behaviors\\IndexControllerOperations.php',
+  'RainLab\\Builder\\Behaviors\\IndexDataRegistry' => 'plugins\\rainlab\\builder\\behaviors\\IndexDataRegistry.php',
+  'RainLab\\Builder\\Widgets\\PluginList' => 'plugins\\rainlab\\builder\\widgets\\PluginList.php',
+  'RainLab\\Builder\\Widgets\\DatabaseTableList' => 'plugins\\rainlab\\builder\\widgets\\DatabaseTableList.php',
+  'RainLab\\Builder\\Widgets\\ModelList' => 'plugins\\rainlab\\builder\\widgets\\ModelList.php',
+  'RainLab\\Builder\\Widgets\\VersionList' => 'plugins\\rainlab\\builder\\widgets\\VersionList.php',
+  'RainLab\\Builder\\Widgets\\LanguageList' => 'plugins\\rainlab\\builder\\widgets\\LanguageList.php',
+  'RainLab\\Builder\\Widgets\\ControllerList' => 'plugins\\rainlab\\builder\\widgets\\ControllerList.php',
+  'RainLab\\Builder\\Models\\Settings' => 'plugins\\rainlab\\builder\\models\\Settings.php',
+<<<<<<< HEAD
+=======
+  'agit\\agitpost\\Controllers\\post' => 'plugins\\agit\\agitpost\\controllers\\post.php',
+  'Agit\\AgitPost\\Models\\Post' => 'plugins\\agit\\agitpost\\models\\Post.php',
+>>>>>>> 33d2d01cd58637b94ba0df725597af18bb22bd11
+>>>>>>> 6589e23b07d30d82088f208532a6ef436031111c
 );
