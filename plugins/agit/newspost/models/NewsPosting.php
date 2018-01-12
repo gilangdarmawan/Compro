@@ -29,17 +29,17 @@ class NewsPosting extends Model
      */
     public $table = 'agit_newspost_';
 
-    public function beforeSave($model){
-        $uuid4 = Uuid::uuid4();
-        $this->$id = $uuid4->toString();
-    }
-
-    public function afterSave($model){
-          $client = new Client([
-            // Base URI is used with relative requests
-            'base_uri' => 'http://httpbin.org',
-            // You can set any number of default request options.
-            'timeout'  => 2.0,
-          ]);
-    }
+    // public function beforeSave($model){
+    //     $uuid4 = Uuid::uuid4();
+    //     $this->$id = $uuid4->toString();
+    // }
+    //
+    // public function afterSave($model){
+    //       $client = new Client([
+    //         // Base URI is used with relative requests
+    //         'base_uri' => 'http://httpbin.org',
+    //         // You can set any number of default request options.
+    //         'timeout'  => 2.0,
+    //       ]);
+    // }
 }

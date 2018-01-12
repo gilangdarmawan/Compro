@@ -8,7 +8,7 @@ use Model;
 class Post extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -28,4 +28,18 @@ class Post extends Model
     public $attachOne = [
       'iconslider' =>'System\Models\File'
     ];
+
+    public function getCategoryOptions()
+    {
+        return ['EBA' => 'EBA', 'Digital Platform' => 'Digital Platform'];
+    }
+
+    public function getSubCategoryOptions(){
+      if ($this->Category == 'ICT') {
+        return ['EBA' => 'EBA', 'qld' => 'Queensland'];
+      }
+      elseif ($this->Category == 'Digital Platform') {
+          return array('1' => 'USA', 2 => 'Canada');
+      }
+    }
 }

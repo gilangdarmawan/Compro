@@ -4,3 +4,8 @@ plugin:
     author: Agit
     icon: oc-icon-plus
     homepage: ''
+navigation:
+    main-menu-item:
+        label: 'agit.newspost::lang.plugin.name'
+        url: agit/newspost/newspostcontroller
+        icon: icon-certificate

@@ -21,3 +21,6 @@
 1.0.8:
     - 'Updated table agit_agitpost_'
     - builder_table_update_agit_agitpost__6.php
+1.0.9:
+    - 'Updated table agit_agitpost_'
+    - builder_table_update_agit_agitpost__7.php

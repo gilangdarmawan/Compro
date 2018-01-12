@@ -1,0 +1,6 @@
+plugin:
+    name: 'agit.newscontentpost::lang.plugin.name'
+    description: 'agit.newscontentpost::lang.plugin.description'
+    author: Agit
+    icon: oc-icon-caret-square-o-right
+    homepage: ''
