@@ -1,0 +1,47 @@
+description = "Banner"
+
+[viewBag]
+
+[slideshow]
+slideshow = 1
+numberOfSlide = 5
+==
+{% if slideshow.slideshow.slides %}
+<div id='accessDiv' class='carousel slide' data-ride='carousel' data-interval='3500'>
+    <div class='carousel-content'>
+        <div class='carousel-inner' role='listbox'>
+            {% for i, slide in slideshow.slideshow.slides %}
+            <div class='carousel-item{% if loop.first %} active{% endif %}'>
+                <img class='d-block w-100' src='{{ slide.image.path }}' alt='{{ slide.image.title }}'> {% if slide.name or slide.description %}
+                <div class='carousel-caption'>
+                    <div class="card">
+                        <div class="card-body">
+                            {% if slide.name %}
+                            <div class="h3"><b>{{ slide.name }}</b></div>
+                            {% endif %} {% if slide.description %}
+                            <div class="h5 mb-4 text-warning">{{ slide.description|raw }}</div>
+                            {% endif %} {% if slide.link %}
+                            <a class="btn btn-warning" href='{{ slide.link }}' target='_blank'>Learn more</a> {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <a class='carousel-control-prev' href='#accessDiv' role='button' data-slide='prev'>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class='carousel-control-next' href='#accessDiv' role='button' data-slide='next'>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <ol class='carousel-indicators'>
+        {% for i, slide in slideshow.slideshow.slides %}
+        <li data-target='#accessDiv' data-slide-to='{{ loop.index - 1 }}' {% if loop.first %} class='active' {% endif %}></li>
+        {% endfor %}
+    </ol>
+</div>
+{% endif %}

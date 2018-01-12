@@ -688,7 +688,7 @@ a:hover {
     }
     /* home */
     #accessDiv .carousel-item img {
-        height: 50vw;
+        height: 70vw;
         object-fit: cover;
     }
     #accessDiv .carousel-caption {
