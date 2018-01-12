@@ -1,0 +1,47 @@
+fields:
+    title_content_id:
+        label: 'Title Content (id)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    title_content_en:
+        label: 'Title Content (en)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    description_content_id:
+        label: 'Description Content (id)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    description_content_en:
+        label: 'Description Content (en)'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    image:
+        label: 'Image Url'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    image_width:
+        label: 'Image Width (%)'
+        oc.commentPosition: ''
+        span: auto
+        type: number
+    number1:
+        label: Number
+        oc.commentPosition: ''
+        span: auto
+        type: number
+    api_type:
+        label: 'API Type'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    precendence:
+        label: 'Content Order'
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: text

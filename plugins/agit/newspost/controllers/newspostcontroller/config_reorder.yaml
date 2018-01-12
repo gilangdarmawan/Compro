@@ -1,0 +1,4 @@
+title: NewsPostController
+modelClass: Agit\NewsPost\Models\NewsPosting
+toolbar:
+    buttons: reorder_toolbar

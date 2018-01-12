@@ -40,3 +40,14 @@ fields:
         hidden: 0
         required: 1
         type: fileupload
+    sub_category:
+        label: SubCategory
+        options:
+            EBA: EBA
+            qld: Queensland
+            bc: 'British Columbia'
+            'on': Ontario
+        span: auto
+        dependsOn:
+            - category
+        type: dropdown
