@@ -104,4 +104,6 @@
   'RainLab\\Builder\\Models\\Settings' => 'plugins\\rainlab\\builder\\models\\Settings.php',
   'agit\\agitpost\\Controllers\\post' => 'plugins\\agit\\agitpost\\controllers\\post.php',
   'Agit\\AgitPost\\Models\\Post' => 'plugins\\agit\\agitpost\\models\\Post.php',
+  'system\\Controllers\\settings' => 'modules\\system\\controllers\\settings.php',
+  'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
 );
