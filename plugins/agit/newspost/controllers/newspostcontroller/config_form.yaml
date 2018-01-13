@@ -1,0 +1,10 @@
+name: NewsPostController
+form: $/agit/newspost/models/newsposting/fields_newspost.yaml
+modelClass: Agit\NewsPost\Models\NewsPosting
+defaultRedirect: agit/newspost/newspostcontroller
+create:
+    redirect: 'agit/newspost/newspostcontroller/update/:id'
+    redirectClose: agit/newspost/newspostcontroller
+update:
+    redirect: agit/newspost/newspostcontroller
+    redirectClose: agit/newspost/newspostcontroller

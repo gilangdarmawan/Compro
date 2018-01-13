@@ -1,0 +1,6 @@
+columns:
+    content_id:
+        label: 'Content Id'
+        type: text
+        searchable: true
+        sortable: true

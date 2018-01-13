@@ -467,22 +467,59 @@ items:
             isExternal: '0'
     -
         title: Company
-        nesting: ''
-        type: cms-page
-        url: ''
+        type: url
+        url: '#'
         code: ''
-        reference: '404'
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+        items:
+            -
+                title: About
+                type: cms-page
+                code: ''
+                reference: about
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: News
+                type: cms-page
+                code: ''
+                reference: news
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Career
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Our People'
+                type: cms-page
+                code: ''
+                reference: '404'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
     -
         title: 'Contact Us'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: contact
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''

@@ -6,3 +6,9 @@
 1.0.3:
     - 'Updated table agit_newspost_'
     - builder_table_update_agit_newspost_.php
+1.0.4:
+    - 'Created table agit_newspost_content_element'
+    - builder_table_create_agit_newspost_content_element.php
+1.0.5:
+    - 'Updated table agit_newspost_'
+    - builder_table_update_agit_newspost__2.php

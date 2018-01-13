@@ -10,7 +10,10 @@ hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
 ==
-{% content 'Home/Landing' %}
+<style type="text/css">
+.navbar-brand{padding:1.285rem 0}@media screen and (max-width:667px){.navbar-brand{padding:.5rem 0}#accessDiv .card .card-body .h5{font-size:1rem}.carousel-control-next,.carousel-control-prev{width:10%}#accessDiv .carousel-caption{padding:15px 30px}}
+</style>
+{% partial 'microsoft/banner' %}
 {% content 'Microsoft/Service' %}
 {% content 'Microsoft/Product' %}
 {% content 'Microsoft/Costumer' %}

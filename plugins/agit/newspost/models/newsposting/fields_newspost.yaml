@@ -1,56 +1,56 @@
-fields:
-    title_id:
-        label: 'Title (Indonesia)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    title_en:
-        label: 'Title (English)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    alias_id:
-        label: 'Alias (Indonesia)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    alias_en:
-        label: 'Alias (English)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    topic_id:
-        label: 'Topic Id'
-        oc.commentPosition: ''
-        span: full
-        type: text
-    meta_title_id:
-        label: 'Meta Title (Indonesia)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    meta_title_en:
-        label: 'Meta Title (English)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    meta_description_id:
-        label: 'Meta Description (Indonesia)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    meta_description_en:
-        label: 'Meta Description (English)'
-        oc.commentPosition: ''
-        span: auto
-        type: text
-    meta_image:
-        label: 'Meta Image'
-        oc.commentPosition: ''
-        span: full
-        type: text
-    api_type:
-        label: 'API Type'
-        oc.commentPosition: ''
-        span: full
-        type: text
+tabs:
+    fields:
+        title_id:
+            label: 'Title (id)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: 'Create Article'
+        title_en:
+            label: 'Title (en)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: 'Create Article'
+        alias_id:
+            label: 'Alias (id)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: 'Create Article'
+        alias_en:
+            label: 'Alias (en)'
+            span: auto
+            oc.commentPosition: ''
+            type: text
+            tab: 'Create Article'
+        meta_title_id:
+            label: 'Meta Title (id)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: Metadata
+        meta_title_en:
+            label: 'Meta Title (en)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: Metadata
+        meta_description_id:
+            label: 'Meta Description (id)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: Metadata
+        meta_description_en:
+            label: 'Meta Description (en)'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: Metadata
+        meta_image:
+            label: 'Meta Image URL'
+            oc.commentPosition: ''
+            span: full
+            type: text
+            tab: Metadata

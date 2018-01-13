@@ -45,8 +45,9 @@ pageNumber = "{{ :page }}"
                     <div class="on-hover">
                         {% spaceless %}
                         {% if detailsPage %}
+                        <b>{{ record.title }}</b> {{ html_limit(record.desc, 100) | raw }}
                         <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
-                            <b>{{ record.title }}</b> {{ html_limit(record.desc, 150) | raw }}
+                            <b>See Details <i class="fa fa-angle-right fa-fw"></i></b>
                         </a>
                         {% endif %}
                         {% endspaceless %}
