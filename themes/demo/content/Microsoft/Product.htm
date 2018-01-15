@@ -1,14 +1,16 @@
-<div class="page-content bg-light">
+<div class="bg-light py-5">
     <div class="container pns">
-        <div class="title">Product &amp; Solutions</div>
+        <div class="page-content">
+            <div class="title">Product &amp; Solutions</div>
+        </div>
         <div class="row">
             <div class="col-md-1 col-12 ml-md-auto">
                 <div class="nav flex-md-column flex-row justify-content-center nav-pills" id="v-pills-tab">
-                	<a class="nav-link active" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab"><img src="/compro/storage/app/media/company-logo/office_365_logo.png" alt="office_365_logo" class="img-fluid"></a>
+                    <a class="nav-link active" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab"><img src="/compro/storage/app/media/company-logo/office_365_logo.png" alt="office_365_logo" class="img-fluid"></a>
                     <a class="nav-link" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab"><img src="/compro/storage/app/media/company-logo/azure_logo.png" alt="azure_logo" class="img-fluid"></a>
                 </div>
             </div>
-            <div class="col-md-8 col-12 ml-md-3 mr-md-auto">
+            <div class="col-md-9 col-12 ml-md-2 mr-md-auto">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home">
                         <div class="row text-center text-md-left">
@@ -17,9 +19,27 @@
                             </div>
                             <div class="col-md-6 col-12 mt-3 mt-md-0">
                                 <div class="h5"><strong>What is Office 365?</strong></div>
-                                <div class="mb-3">AGIT is now launching new business model; Cloud Service Provider. more than just a manage service provider – we are your trusted service partner. With our years of experience and Microsoft certified professionals of managed private cloud and providing hosting solutions, we are honored to be one of the few chosen to be Microsoft’s direct CSP partner in Indonesia, providing best cloud solutions for enterprises, emerging corporates and small medium businesses. Our full end to end service includes:</div>
+                                <div class="mb-3">
+                                    Office 365 customers receive an always up-to-date version of the Office desktop applications.
+                                    <ul class="product-list">
+                                        <li>Free update. Never buy a new version of Office again!</li>
+                                        <li>Custom-domain for email addresses. No more personal email for your work</li>
+                                        <li>Each user can install Office on up to 5 PCs or Macs, 5 Mobile Devices and 5 tablets</li>
+                                        <li>Save to the cloud for backup and anywhere access</li>
+                                        <li>Use Office on your smartphone and tablet</li>
+                                        <li>Pay only what you use,</li>
+                                    </ul>
+                                </div>
                                 <a href="storage/app/media/microsoft/O365%20Features%20and%20Pricing%20.png" class="btn btn-info" target="_blank">O365 Features & Pricing</a>
-                                <a class="btn btn-danger" href="#">Click Here</a></div>
+                                <div class="my-3 d-flex flex-column text-left">
+                                    <b>To know more, follow Microsoft Webinar: </b>
+                                    <a href="https://youtu.be/v7EZ3PjeLSE" target="_blank" class="text-danger">Why Microsoft Cloud Webinar (Bahasa)</a>
+                                    <a href="https://youtu.be/dl5gZ_tCsXE" target="_blank" class="text-danger">Kerja lebih efektif dengan Outlook Mobile (Bahasa)</a>
+                                    <a href="https://youtu.be/acWSHS_Xm6s" target="_blank" class="text-danger">Meeting dimana saja dengan Skype For Business</a>
+                                </div>
+                                <a class="btn btn-danger btn-lg w-50" href="#">Click Here</a>
+                                <small class="text-danger d-flex mt-1 justify-content-md-start justify-content-center">for free 30 days of Office 365 trial</small>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-profile">
@@ -29,7 +49,58 @@
                             </div>
                             <div class="col-md-6 col-12 mt-3 mt-md-0">
                                 <div class="h5"><strong>What is Microsoft Azure?</strong></div>
-                                <div class="mb-3">AGIT is now launching new business model; Cloud Service Provider. more than just a manage service provider – we are your trusted service partner. With our years of experience and Microsoft certified professionals of managed private cloud and providing hosting solutions, we are honored to be one of the few chosen to be Microsoft’s direct CSP partner in Indonesia, providing best cloud solutions for enterprises, emerging corporates and small medium businesses. Our full end to end service includes:</div><a class="btn btn-danger" href="#">Click Here</a></div>
+                                <div class="mb-3">
+                                    <ul class="product-list-azure">
+                                        <li>The only major cloud platform that offers IAAS, PAAS OR HYBRID.</li>
+                                        <li>
+                                            <b>ALWAYS UP, ALWAYS ON</b>
+                                            <br> Microsoft Azure delivers a 99.95% monthly SLA
+                                        </li>
+                                        <li>Enables you to use any language, framework, or tool to build applications.</li>
+                                        <li>
+                                            <b>UNLIMITED SERVERS. UNLIMITED STORAGE</b>
+                                            <br>you to easily scale your applications to any size
+                                        </li>
+                                        <li>
+                                            <b>BETTER PRICE FOR PERFORMANCE</b>
+                                            <br>than Amazon EC2, better interoperability with Microsoft Apps, and end-to-end support for Oracle
+                                        </li>
+                                        <li>
+                                            <b>POWERFUL CAPABILITIES</b>
+                                            <br>Microsoft Azure delivers a flexible cloud platform that can satisfy any application need.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="my-3 d-flex flex-column text-left">
+                                    <b>To know more, follow Microsoft Webinar: </b>
+                                    <a href="https://youtu.be/v7EZ3PjeLSE" target="_blank" class="text-info">Breaking Azure Myths (in Bahasa)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-12 mx-auto mt-5">
+                <div class="card-deck">
+                    <div class="card azure-card" style="display: none;">
+                        <img class="rounded mx-auto d-block mt-5" src="storage/app/media/microsoft/icon/azure_backup_icon.png">
+                        <div class="card-body">
+                            <div class="card-title">Azure Back Up with only IDR 169K / month</div>
+                            <p class="card-text">With 100GB storage; 5GB/month</p>
+                        </div>
+                    </div>
+                    <div class="card azure-card" style="display: none;">
+                        <img class="rounded mx-auto d-block mt-4" src="storage/app/media/microsoft/icon/azure_virtual_icon.png">
+                        <div class="card-body">
+                            <div class="card-title">Azure Virtual Machine starting IDR 1.8 Jt / month</div>
+                            <p class="card-text">1 standard virtual machine, 5GB data transfer , 135 GB disk; classic IP address</p>
+                        </div>
+                    </div>
+                    <div class="card azure-card" style="display: none;">
+                        <img class="rounded mx-auto d-block mt-5" src="storage/app/media/microsoft/icon/azure_site_icon.png">
+                        <div class="card-body">
+                            <div class="card-title">Azure Site Recovery only IDR 4.5Jt / month</div>
+                            <p class="card-text">1 std virtual machine, 2 cores, 4GB RAM, 20 GB disk</p>
                         </div>
                     </div>
                 </div>

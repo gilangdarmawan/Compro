@@ -17,15 +17,15 @@ description = "Layout for Microsoft page"
     <link href="{{ 'assets/css/agit.min.css'|theme }}" rel="stylesheet">
     <style type="text/css">
     .btn-call-to-action {
-        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         position: fixed;
         top: 50%;
-        right: 0;
+        right: -45px;
         cursor: pointer;
         transform: rotate(270deg);
-    font-weight: 500;
-    font-size: .9rem;
+        font-weight: 500;
+        font-size: .9rem;
     }
     </style>
     {% styles %}
@@ -49,7 +49,7 @@ description = "Layout for Microsoft page"
         {% page %}
     </section>
     <button class="btn btn-warning btn-call-to-action">
-        <i class="fa fa-phone fa-fw"></i>
+        <i class="fa fa-phone fa-fw"></i> CONTACT US
     </button>
     <!-- Footer -->
     <footer id="layout-footer">
@@ -63,8 +63,14 @@ description = "Layout for Microsoft page"
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     <script>
-    $(".btn-call-to-action").click(function() {
+    $(".btn-call-to-action, .go-to-contact").click(function() {
         $('html,body').animate({ scrollTop: $("#contact-div").offset().top }, 'slow');
+    });
+    $("#v-pills-profile-tab").click(function() {
+        $(".azure-card").css("display", "flex");
+    });
+    $("#v-pills-home-tab").click(function() {
+        $(".azure-card").css("display", "none");
     });
     </script>
     {% framework extras %} {% scripts %}
