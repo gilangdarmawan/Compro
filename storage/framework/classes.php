@@ -125,6 +125,10 @@
   'RainLab\\Builder\\Classes\\IconList' => 'plugins\\rainlab\\builder\\classes\\IconList.php',
   'agit\\agitpost\\Controllers\\post' => 'plugins\\agit\\agitpost\\controllers\\post.php',
   'Agit\\AgitPost\\Models\\Post' => 'plugins\\agit\\agitpost\\models\\Post.php',
+<<<<<<< HEAD
+  'system\\Controllers\\settings' => 'modules\\system\\controllers\\settings.php',
+  'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
+=======
   'RainLab\\Builder\\Classes\\MigrationColumnType' => 'plugins\\rainlab\\builder\\classes\\MigrationColumnType.php',
   'RainLab\\Builder\\Classes\\DatabaseTableSchemaCreator' => 'plugins\\rainlab\\builder\\classes\\DatabaseTableSchemaCreator.php',
   'RainLab\\Builder\\Classes\\TableMigrationCodeGenerator' => 'plugins\\rainlab\\builder\\classes\\TableMigrationCodeGenerator.php',
@@ -152,6 +156,7 @@
   'RainLab\\Translate\\FormWidgets\\MLTextarea' => 'plugins\\rainlab\\translate\\formwidgets\\MLTextarea.php',
   'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\BlogMarkdown.php',
   'RainLab\\Blog\\FormWidgets\\MLBlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\MLBlogMarkdown.php',
+<<<<<<< HEAD
   'flosch\\slideshow\\Plugin' => 'plugins\\flosch\\slideshow\\Plugin.php',
   'Flosch\\Slideshow\\Components\\Slideshow' => 'plugins\\flosch\\slideshow\\components\\Slideshow.php',
   'Flosch\\Slideshow\\Models\\Slideshow' => 'plugins\\flosch\\slideshow\\models\\Slideshow.php',
@@ -167,4 +172,7 @@
   'RainLab\\Pages\\Classes\\SnippetManager' => 'plugins\\rainlab\\pages\\classes\\SnippetManager.php',
   'RainLab\\Translate\\Classes\\MLCmsObject' => 'plugins\\rainlab\\translate\\classes\\MLCmsObject.php',
   'RainLab\\Translate\\Classes\\MLContent' => 'plugins\\rainlab\\translate\\classes\\MLContent.php',
+=======
+>>>>>>> e6a153394c73d4f18ba023488a097bfd58c6f35a
+>>>>>>> b31bd2593a7812f9b4d4fa213a6d231e23044af5
 );
