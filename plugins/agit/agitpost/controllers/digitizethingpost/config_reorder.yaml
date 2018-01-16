@@ -1,0 +1,4 @@
+title: DigitizeThingPost
+modelClass: Agit\AgitPost\Models\DigitizeThing
+toolbar:
+    buttons: reorder_toolbar

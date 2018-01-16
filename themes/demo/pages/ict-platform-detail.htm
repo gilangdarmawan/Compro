@@ -1,5 +1,5 @@
-title = "Details"
-url = "/ict-platform/detail/:slug"
+title = "ICT Platform Details"
+url = "/ict-platform/:title/:slug"
 layout = "master"
 is_hidden = 0
 robot_index = "index"
@@ -9,18 +9,27 @@ hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
 
+[viewBag]
+localeUrl[id] = "/ict-platform-details"
+
 [blogPost]
 slug = "{{ :slug }}"
-categoryPage = "ict-platform-post"
+categoryPage = "ict-platform-list"
 
 [breadcrumbs]
 main-ol-class = "breadcrumb container"
 active-class = "active"
 disabled-class = "disabled"
+
+[builderDetails]
+modelClass = "Agit\AgitPost\Models\Post"
+identifierValue = "{{ :title }}"
+modelKeyColumn = "title"
+displayColumn = "title"
+notFoundMessage = "Record not found"
 ==
-
 {% set post = blogPost.post %}
-
+{% component 'builderDetails' %}
 <div class="container">
     {% component 'breadcrumbs' %}
     <h4>{{ post.title }}</h4>

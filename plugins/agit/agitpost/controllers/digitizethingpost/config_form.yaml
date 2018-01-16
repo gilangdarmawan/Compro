@@ -1,0 +1,10 @@
+name: DigitizeThingPost
+form: $/agit/agitpost/models/digitizething/fields.yaml
+modelClass: Agit\AgitPost\Models\DigitizeThing
+defaultRedirect: agit/agitpost/digitizethingpost
+create:
+    redirect: 'agit/agitpost/digitizethingpost/update/:id'
+    redirectClose: agit/agitpost/digitizethingpost
+update:
+    redirect: agit/agitpost/digitizethingpost
+    redirectClose: agit/agitpost/digitizethingpost

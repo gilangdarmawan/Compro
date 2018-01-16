@@ -1,0 +1,12 @@
+list: $/agit/agitpost/models/digitizething/columns.yaml
+modelClass: Agit\AgitPost\Models\DigitizeThing
+title: DigitizeThingPost
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'agit/agitpost/digitizethingpost/update/:id'

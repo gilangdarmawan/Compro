@@ -9,3 +9,20 @@ navigation:
         label: Post
         url: agit/agitpost/post
         icon: icon-edit
+        sideMenu:
+            side-menu-item:
+                label: ICT
+                url: agit/agitpost/post
+                icon: icon-cloud
+            side-menu-item2:
+                label: 'Digital Platform'
+                url: agit/agitpost/digitalplatformpost
+                icon: icon-desktop
+            side-menu-item3:
+                label: 'Business Solution'
+                url: agit/agitpost/businesssolutionpost
+                icon: icon-dollar
+            side-menu-item4:
+                label: 'Digitize Thing'
+                url: agit/agitpost/digitizethingpost
+                icon: icon-mobile-phone

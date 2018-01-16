@@ -1,0 +1,4 @@
+title: DigitalPlatformPost
+modelClass: Agit\AgitPost\Models\DigitalPlatform
+toolbar:
+    buttons: reorder_toolbar

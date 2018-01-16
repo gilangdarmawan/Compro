@@ -1,0 +1,10 @@
+name: DigitalPlatformPost
+form: $/agit/agitpost/models/digitalplatform/fields.yaml
+modelClass: Agit\AgitPost\Models\DigitalPlatform
+defaultRedirect: agit/agitpost/digitalplatformpost
+create:
+    redirect: 'agit/agitpost/digitalplatformpost/update/:id'
+    redirectClose: agit/agitpost/digitalplatformpost
+update:
+    redirect: agit/agitpost/digitalplatformpost
+    redirectClose: agit/agitpost/digitalplatformpost

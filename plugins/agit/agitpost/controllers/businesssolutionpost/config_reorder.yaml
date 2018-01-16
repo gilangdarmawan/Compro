@@ -1,0 +1,4 @@
+title: BusinessSolutionPost
+modelClass: Agit\AgitPost\Models\BusinessSolution
+toolbar:
+    buttons: reorder_toolbar

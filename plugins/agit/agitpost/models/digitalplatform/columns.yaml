@@ -2,17 +2,12 @@ columns:
     title:
         label: Title
         type: text
-        searchable: true
-        sortable: true
     desc:
         label: Description
         type: text
-        searchable: true
-        sortable: true
     post_date:
         label: Date
-        type: date
-        sortable: true
+        type: datetime
     category:
         label: Category
         type: text

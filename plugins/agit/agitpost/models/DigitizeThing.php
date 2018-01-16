@@ -5,10 +5,10 @@ use Model;
 /**
  * Model
  */
-class Post extends Model
+class DigitizeThing extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-
+    
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -20,6 +20,7 @@ class Post extends Model
      */
     public $rules = [
     ];
+
     /**
      * @var string The database table used by the model.
      */
@@ -28,23 +29,4 @@ class Post extends Model
     public $attachOne = [
       'icon' =>'System\Models\File'
     ];
-
-    public function getCategoryOptions()
-    {
-        return ['ICT' => 'ICT', 'Digital Platform' => 'Digital Platform'];
-    }
-
-    public function getSubCategoryOptions(){
-      if ($this->category == 'ICT') {
-        //return array('1' => 'USA');
-        return ['1' => 'USA'];
-      }
-      elseif ($this->category == 'Digital Platform') {
-        //return array(2 => 'Canada');
-        return ['2' => 'Canada'];
-      }
-      else{
-        return false;
-      }
-    }
 }

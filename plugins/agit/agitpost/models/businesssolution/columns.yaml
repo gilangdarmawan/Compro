@@ -8,11 +8,9 @@ columns:
         label: Description
         type: text
         searchable: true
-        sortable: true
     post_date:
         label: Date
         type: date
-        sortable: true
     category:
         label: Category
         type: text

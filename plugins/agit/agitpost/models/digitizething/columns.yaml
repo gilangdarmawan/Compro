@@ -8,14 +8,15 @@ columns:
         label: Description
         type: text
         searchable: true
-        sortable: true
     post_date:
         label: Date
         type: date
-        sortable: true
     category:
         label: Category
         type: text
-    sub_category:
-        label: 'Sub Category'
+    icon:
+        label: Icon
         type: text
+    id:
+        label: ID
+        type: number

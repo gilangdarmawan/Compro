@@ -1,0 +1,10 @@
+name: BusinessSolutionPost
+form: $/agit/agitpost/models/businesssolution/fields.yaml
+modelClass: Agit\AgitPost\Models\BusinessSolution
+defaultRedirect: agit/agitpost/businesssolutionpost
+create:
+    redirect: 'agit/agitpost/businesssolutionpost/update/:id'
+    redirectClose: agit/agitpost/businesssolutionpost
+update:
+    redirect: agit/agitpost/businesssolutionpost
+    redirectClose: agit/agitpost/businesssolutionpost

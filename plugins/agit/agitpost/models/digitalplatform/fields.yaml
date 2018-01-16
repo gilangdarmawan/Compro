@@ -7,24 +7,28 @@ fields:
         type: text
     desc:
         label: Description
-        span: full
         size: ''
         oc.commentPosition: ''
+        span: full
+        required: 1
+        stretch: 0
         type: richeditor
     post_date:
         label: Date
         oc.commentPosition: ''
         mode: datetime
         span: auto
+        hidden: 1
         type: datepicker
     category:
         label: Category
         oc.commentPosition: ''
         options:
-            ICT: ICT
+            'Digital Platform': 'Digital Platform'
         span: auto
         disabled: 0
-        hidden: 0
+        required: 1
+        defaultFrom: category
         type: dropdown
     icon:
         label: Icon
@@ -35,18 +39,15 @@ fields:
             mode: crop
             extension: auto
         span: auto
-        disabled: 0
-        hidden: 0
-        required: 1
         type: fileupload
     sub_category:
         label: SubCategory
         oc.commentPosition: ''
         span: auto
-        dependsOn:
-            - category
+        required: 1
         options:
-            1: EBA
-            2: NGI
-            3: 'MO & BPO'
+            1: Analytics
+            2: IoT
+            3: Cloud
+            4: Security
         type: dropdown

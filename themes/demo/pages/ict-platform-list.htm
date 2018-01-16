@@ -1,5 +1,5 @@
-title = "ICT-Platform List"
-url = "/ict-platform/:id"
+title = "ICT Platform List"
+url = "/ict-platform/:title"
 layout = "master"
 description = "Our Infrastructure Services are the result of a significant expertise grown over many years, enhanced by our strategic alliance with world leading technology companies."
 is_hidden = 0
@@ -10,6 +10,9 @@ hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
 
+[viewBag]
+localeUrl[id] = "/ict-platform-list"
+
 [breadcrumbs]
 main-ol-class = "breadcrumb container"
 active-class = "active"
@@ -17,9 +20,9 @@ disabled-class = "disabled"
 
 [builderDetails]
 modelClass = "Agit\AgitPost\Models\Post"
-identifierValue = "{{ :id }}"
-modelKeyColumn = "id"
-displayColumn = "id"
+identifierValue = "{{ :title }}"
+modelKeyColumn = "title"
+displayColumn = "title"
 notFoundMessage = "Record not found"
 
 [blogPosts]
@@ -28,8 +31,8 @@ categoryFilter = "EBA"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-categoryPage = "ict-platform-post"
-postPage = "details"
+categoryPage = "ict-platform-detail"
+postPage = "ict-platform-detail"
 ==
 {% partial 'site/title' %}
 

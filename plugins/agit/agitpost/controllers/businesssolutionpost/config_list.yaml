@@ -1,0 +1,12 @@
+list: $/agit/agitpost/models/businesssolution/columns.yaml
+modelClass: Agit\AgitPost\Models\BusinessSolution
+title: BusinessSolutionPost
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'agit/agitpost/businesssolutionpost/update/:id'

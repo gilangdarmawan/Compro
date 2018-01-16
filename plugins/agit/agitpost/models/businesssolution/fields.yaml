@@ -7,9 +7,9 @@ fields:
         type: text
     desc:
         label: Description
-        span: full
         size: ''
         oc.commentPosition: ''
+        span: full
         type: richeditor
     post_date:
         label: Date
@@ -20,33 +20,27 @@ fields:
     category:
         label: Category
         oc.commentPosition: ''
-        options:
-            ICT: ICT
         span: auto
-        disabled: 0
-        hidden: 0
+        options:
+            3: 'Business Solution'
         type: dropdown
     icon:
         label: Icon
         oc.commentPosition: ''
-        mode: image
+        mode: file
         useCaption: true
         thumbOptions:
             mode: crop
             extension: auto
         span: auto
-        disabled: 0
-        hidden: 0
-        required: 1
         type: fileupload
     sub_category:
         label: SubCategory
         oc.commentPosition: ''
-        span: auto
-        dependsOn:
-            - category
         options:
-            1: EBA
-            2: NGI
-            3: 'MO & BPO'
+            1: 'Customer Engagement & CE'
+            2: Finance
+            3: 'Supply Chain, Logistic & Distribution'
+            4: 'Talent Management'
+        span: auto
         type: dropdown
