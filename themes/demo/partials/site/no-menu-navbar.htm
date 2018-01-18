@@ -1,12 +1,16 @@
 [viewBag]
 ==
 <!-- Nav -->
-<nav id="layout-nav" class="navbar navbar-light navbar-expand-lg" role="navigation">
-    <div class="container">
+<nav id="layout-nav" class="navbar navbar-expand-lg fixed-top" role="navigation">
+    <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="{{ 'home'|page }}">
-              <img src="storage/app/media/company-logo/agit-logo.png" alt="logo">
+              <img src="storage/app/media/company-logo/logo_agit_white.png" alt="logo">
             </a>
+        </div>
+        <div class="ml-auto">
+            <a class="nav-lang mr-md-2 mr-1" href="/en/ {{ this.currentPageUrl}}" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a> |
+            <a class="nav-lang ml-md-2 ml-1" href="/id/{{ this.currentPageUrl}}" data-request="onSwitchLocale" data-request-data="locale: 'id'">Indonesia</a>
         </div>
     </div>
 </nav>

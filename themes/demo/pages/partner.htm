@@ -1,0 +1,45 @@
+title = "Partner"
+url = "/partner"
+layout = "master"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeUrl[id] = "/partner"
+==
+<style type="text/css">
+.partner-div a {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin: 1rem 0;
+        align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .partner-div a {
+        width: 50%;
+        padding: 0 15px;
+    }
+    .partner-div a img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+</style>
+{% partial 'site/title' %}
+<div class="container">
+    <div class="row no-gutters my-md-5 my-3">
+        <div class="col-md-9 col-12 mx-auto partner-div">
+            {% content 'Home/Partners' %}
+        </div>
+    </div>
+</div>

@@ -33,7 +33,7 @@ errorMessage = "Email already exists!"
         <div class="desc mb-5">
             News
             <br>
-            <span>Keep update with our Activities & Communities</span>
+            <span>{{ 'Keep update with our Activities & Communities'|_ }}</span>
         </div>
         <div class="card-deck">
             {% for post in posts %}
@@ -58,7 +58,14 @@ errorMessage = "Email already exists!"
         </div>
     </div>
 </div>
-{% content 'Home/Partners' %}
+<div class="page-content bg-light">
+    <div class="container partner-div">
+        <div class="title">Our Partners</div>
+        <div class="col-md-10 col-12 mx-auto text-center">
+            {% content 'Home/Partners' %}            
+        </div>
+    </div>
+</div>
 <div class="page-content bg-white">
     <div class="container partners-section">
         <div class="row align-items-center">

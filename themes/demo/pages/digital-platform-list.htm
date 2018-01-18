@@ -19,12 +19,16 @@ modelKeyColumn = "title"
 displayColumn = "title"
 notFoundMessage = "Record not found"
 ==
-{% set record = builderDetails.record %}
-{% set displayColumn = builderDetails.displayColumn %}
-{% set notFoundMessage = builderDetails.notFoundMessage %}
+{% partial 'site/title' %}
 
-{% if record %}
-    {{ attribute(record, displayColumn) }}
-{% else %}
-    {{ notFoundMessage }}
-{% endif %}
+<div class="container">
+    {% set record = builderDetails.record %}
+    {% set displayColumn = builderDetails.displayColumn %}
+    {% set notFoundMessage = builderDetails.notFoundMessage %}
+
+    {% if record %}
+    	{{ attribute(record, displayColumn) }}
+    {% else %}
+    	{{ notFoundMessage }}
+    {% endif %}
+</div>

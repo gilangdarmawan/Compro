@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+
+body,
+html {
+    color: #525252;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+.btn:focus,
+.form-control:focus {
+    border-color: #f79021;
+    box-shadow: none
+}
+
 .microsoft-cust-section .desc,
 .page-content .desc,
 .slide-section .desc {
@@ -12,22 +31,6 @@
     left: 0;
     top: 0;
     bottom: 0
-}
-
-body,
-html {
-    color: #525252
-}
-
-a,
-a:hover {
-    text-decoration: none
-}
-
-.btn:focus,
-.form-control:focus {
-    border-color: #f79021;
-    box-shadow: none
 }
 
 #layout-header {
@@ -109,7 +112,7 @@ a:hover {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(/compro/storage/app/media/home/jumbotron.png) center center no-repeat;
+    background: url(/storage/app/media/home/jumbotron.png) center center no-repeat;
     background-size: cover;
     padding: 5em 1em;
     color: #fff
@@ -138,7 +141,7 @@ a:hover {
 }
 
 .home-offer {
-    background-image: url(/compro/storage/app/media/home/home_offer.png);
+    background-image: url(/storage/app/media/home/home_offer.png);
     background-repeat: no-repeat;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -164,18 +167,22 @@ a:hover {
     font-weight: 500
 }
 
-.microsoft-cust-section,
+.microsoft-cust-section {
+    background: url(/storage/app/media/home/slide_div_section.png) no-repeat;
+    background-position: center top;
+    background-size: contain;
+    padding-top: 3rem;
+    padding-bottom: 3rem
+}
+
 .slide-section {
-    background: url(/compro/storage/app/media/home/slide_div_section.png) no-repeat, url(/compro/storage/app/media/home/slide_div_section_thumb_1.png) no-repeat, url(/compro/storage/app/media/home/slide_div_section_thumb_2.png) no-repeat;
+    background: url(/storage/app/media/home/slide_div_section.png) no-repeat, url(/storage/app/media/home/slide_div_section_thumb_1.png) no-repeat, url(/storage/app/media/home/slide_div_section_thumb_2.png) no-repeat;
     background-position: center top, calc(50% + 36rem) calc(50% + 1rem), calc(50% - 37rem) calc(50% + 18rem);
     background-size: contain, auto, auto;
     padding-top: 3rem;
     padding-bottom: 3rem
 }
 
-.microsoft-cust-section {
-    background-position: center top, calc(50% + 36rem) calc(50% + 1rem), calc(50% - 37rem) calc(50% + 15rem)
-}
 
 .slide-section .card-img-top {
     height: 15em;
@@ -189,7 +196,7 @@ a:hover {
 }
 
 .partners-section {
-    background: url(/compro/storage/app/media/home/slide_div_section_thumb_2.png) top left no-repeat, url(/compro/storage/app/media/home//slide_div_section_thumb_1.png) bottom right no-repeat;
+    background: url(/storage/app/media/home/slide_div_section_thumb_2.png) top left no-repeat, url(/storage/app/media/home//slide_div_section_thumb_1.png) bottom right no-repeat;
     background-size: 7%, 6%;
     margin-top: 2rem;
     margin-bottom: 2rem
@@ -220,22 +227,22 @@ a:hover {
 }
 
 .csp-bg:nth-child(1n+0) .agit-csp-card .cardbox .original {
-    background: url(/compro/storage/app/media/home/grid/people-office-group-team.jpg) center center no-repeat;
+    background: url(/storage/app/media/microsoft/csp-card-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .csp-bg:nth-child(2n+0) .agit-csp-card .cardbox .original {
-    background: url(/compro/storage/app/media/home/grid/pexels-photo-459654.jpeg) center center no-repeat;
+    background: url(/storage/app/media/microsoft/csp-card-2.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .csp-bg:nth-child(3n+0) .agit-csp-card .cardbox .original {
-    background: url(/compro/storage/app/media/home/grid/pexels-photo-371900.jpeg) center center no-repeat;
+    background: url(/storage/app/media/microsoft/csp-card-3.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .csp-bg:nth-child(4n+0) .agit-csp-card .cardbox .original {
-    background: url(/compro/storage/app/media/home/grid/pexels-photo-1.jpg) center center no-repeat;
+    background: url(/storage/app/media/microsoft/csp-card-4.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -268,7 +275,8 @@ a:hover {
 
 .cardbox .original .text {
     position: relative;
-    font-weight: 500
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .agit-csp-card .on-hover,
@@ -315,6 +323,11 @@ a:hover {
 
 .agit-csp-card .on-hover a:hover {
     color: #6c1a42
+}
+
+.agit-csp-card .on-hover b,
+.agit-nofill-card .on-hover b {
+    text-transform: capitalize;
 }
 
 .product-list,
@@ -366,13 +379,28 @@ a:hover {
 
 .pns .nav-pills .nav-link.active,
 .pns .nav-pills .show>.nav-link {
-    border: 2px solid #f79021
+    border: 2px solid #f79021;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        border: 2px solid #eb3c00;
+    }
+    100% {
+        border: 2px solid #17a2b8;
+    }
 }
 
 .pns .logo-box {
     padding: 2rem;
     background: #fff;
-    border-radius: 1rem
+    border-radius: 1rem;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-content .container {
@@ -480,7 +508,7 @@ a:hover {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(/compro/storage/app/media/home/footer_div_section.png) center center no-repeat;
+    background: url(/storage/app/media/home/footer_div_section.png) center center no-repeat;
     background-size: cover;
     padding: 3em 1em;
     color: #fff
@@ -539,6 +567,34 @@ a:hover {
     -webkit-font-smoothing: antialiased;
     content: "\f105";
     margin: .5em
+}
+
+.pop-up-image {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.pop-up-image .close-button {
+    position: absolute;
+    color: #fff;
+    border: none;
+    right: 1.5rem;
+    top: 1.5rem;
+    padding: 0;
+    font-size: 1.4rem;
+    background: none;
 }
 
 @media screen and (min-width:992px) {

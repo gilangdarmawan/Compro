@@ -1,5 +1,5 @@
-title = "Digital Platform"
-url = "/digital-platform"
+title = "Business Solution"
+url = "/business-solution"
 layout = "master"
 is_hidden = 0
 robot_index = "index"
@@ -10,11 +10,11 @@ remove_crumb_trail = 0
 crumb_disabled = 0
 
 [builderList]
-modelClass = "Agit\AgitPost\Models\DigitalPlatform"
+modelClass = "Agit\AgitPost\Models\BusinessSolution"
 scope = "-"
 displayColumn = "title"
 noRecordsMessage = "No records found"
-detailsPage = "digital-platform-list"
+detailsPage = "business-solution-list"
 detailsKeyColumn = "title"
 detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
@@ -30,7 +30,7 @@ pageNumber = "{{ :page }}"
 <div class="container">
     <div class="row my-5 justify-content-center">
         {% for record in records %}
-        {% if record.category == "Digital Platform" and record.sub_category == "1" %}
+        {% if record.category == "Business Solution" and record.sub_category == "1" %}
         <div class="col-md-3 col-12 py-3 csp-bg">
             <div class="agit-csp-card">
                 <div class="cardbox">
@@ -43,7 +43,6 @@ pageNumber = "{{ :page }}"
                     <div class="on-hover">
                         {% spaceless %}
                         {% if detailsPage %}
-                        <b>{{ record.title }}</b> {{ html_limit(record.desc, 100) | raw }}
                         <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
                             <b>See Details <i class="fa fa-angle-right fa-fw"></i></b>
                         </a>
@@ -55,8 +54,7 @@ pageNumber = "{{ :page }}"
         </div>
         {% endif %}
         {% else %}
-        <h4>{{ noRecordsMessage }}</h4>
-        {% endfor %}
+        <h4>{{ noRecordsMessage }}</h4> {% endfor %}
     </div>
 </div>
 

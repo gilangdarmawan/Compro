@@ -20,14 +20,14 @@ fields:
     category:
         label: Category
         oc.commentPosition: ''
-        span: auto
         options:
-            3: 'Business Solution'
+            'Business Solution': 'Business Solution'
+        span: auto
         type: dropdown
     icon:
         label: Icon
         oc.commentPosition: ''
-        mode: file
+        mode: image
         useCaption: true
         thumbOptions:
             mode: crop
@@ -38,9 +38,10 @@ fields:
         label: SubCategory
         oc.commentPosition: ''
         options:
-            1: 'Customer Engagement & CE'
-            2: Finance
-            3: 'Supply Chain, Logistic & Distribution'
-            4: 'Talent Management'
+            1: None
+            2: 'Customer Engagement & CE'
+            3: Finance
+            4: 'Supply Chain, Logistic & Distribution'
+            5: 'Talent Management'
         span: auto
         type: dropdown

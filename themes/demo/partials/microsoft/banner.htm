@@ -19,7 +19,7 @@ numberOfSlide = 5
                             {% if slide.name %}
                             <div class="h3"><b>{{ slide.name }}</b></div>
                             {% endif %} {% if slide.description %}
-                            <div class="h5 mb-4 text-warning">{{ slide.description|raw }}</div>
+                            <div class="h5 mb-4">{{ slide.description|raw }}</div>
                             {% endif %} {% if slide.link %}
                             <a class="btn btn-warning" href='{{ slide.link }}' target='_blank'>Learn more</a> {% endif %}
                         </div>

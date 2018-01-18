@@ -5,9 +5,6 @@ columns:
     desc:
         label: Description
         type: text
-    post_date:
-        label: Date
-        type: datetime
     category:
         label: Category
         type: text

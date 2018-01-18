@@ -1,4 +1,4 @@
-<div class="bg-light py-5">
+<div class="bg-light py-5" id="product-div">
     <div class="container pns">
         <div class="page-content">
             <div class="title">Product &amp; Solutions</div>
@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-md-1 col-12 ml-md-auto">
                 <div class="nav flex-md-column flex-row justify-content-center nav-pills" id="v-pills-tab">
-                    <a class="nav-link active" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab"><img src="/compro/storage/app/media/company-logo/office_365_logo.png" alt="office_365_logo" class="img-fluid"></a>
-                    <a class="nav-link" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab"><img src="/compro/storage/app/media/company-logo/azure_logo.png" alt="azure_logo" class="img-fluid"></a>
+                    <a class="nav-link active" data-toggle="pill" href="#v-pills-home" id="v-pills-home-tab"><img src="/storage/app/media/company-logo/office_365_logo.png" alt="office_365_logo" class="img-fluid"></a>
+                    <a class="nav-link" data-toggle="pill" href="#v-pills-profile" id="v-pills-profile-tab"><img src="/storage/app/media/company-logo/azure_logo.png" alt="azure_logo" class="img-fluid"></a>
                 </div>
             </div>
             <div class="col-md-9 col-12 ml-md-2 mr-md-auto">
@@ -30,14 +30,15 @@
                                         <li>Pay only what you use,</li>
                                     </ul>
                                 </div>
-                                <a href="storage/app/media/microsoft/O365%20Features%20and%20Pricing%20.png" class="btn btn-info" target="_blank">O365 Features & Pricing</a>
+                                <a href="storage/app/media/microsoft/O365%20Features%20and%20Pricing%20.png" class="btn btn-info d-md-none" target="_blank">O365 Features & Pricing</a>
+                                <button type="button" class="btn btn-info see-pricing d-none d-md-block" style="cursor: pointer;">365 Features & Pricing</button>
                                 <div class="my-3 d-flex flex-column text-left">
                                     <b>To know more, follow Microsoft Webinar: </b>
                                     <a href="https://youtu.be/v7EZ3PjeLSE" target="_blank" class="text-danger">Why Microsoft Cloud Webinar (Bahasa)</a>
                                     <a href="https://youtu.be/dl5gZ_tCsXE" target="_blank" class="text-danger">Kerja lebih efektif dengan Outlook Mobile (Bahasa)</a>
                                     <a href="https://youtu.be/acWSHS_Xm6s" target="_blank" class="text-danger">Meeting dimana saja dengan Skype For Business</a>
                                 </div>
-                                <a class="btn btn-danger btn-lg w-50" href="#">Click Here</a>
+                                <button class="btn btn-danger btn-lg w-50 go-to-contact">Click Here</button>
                                 <small class="text-danger d-flex mt-1 justify-content-md-start justify-content-center">for free 30 days of Office 365 trial</small>
                             </div>
                         </div>
@@ -106,5 +107,13 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="pop-up-image">
+    <button class="btn close-button" style="cursor: pointer;"><i class="fa fa-times"></i></button>
+    <div class="container px-0">
+        <div class="h5 mb-4" style="color: #fff;">O365 Features & Pricing</div>
+        <img src="storage/app/media/microsoft/O365%20Features%20and%20Pricing%20.png" alt="pricing" class="img-fluid">
     </div>
 </div>

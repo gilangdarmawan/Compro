@@ -1,21 +1,13 @@
 columns:
     title:
-        label: Title
+        label: title
         type: text
-        searchable: true
-        sortable: true
     desc:
-        label: Description
+        label: desc
         type: text
-        searchable: true
-        sortable: true
-    post_date:
-        label: Date
-        type: date
-        sortable: true
     category:
-        label: Category
+        label: category
         type: text
     sub_category:
-        label: 'Sub Category'
+        label: sub_category
         type: text

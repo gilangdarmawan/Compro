@@ -16,6 +16,13 @@ description = "Layout for Microsoft page"
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ 'assets/css/agit.min.css'|theme }}" rel="stylesheet">
     <style type="text/css">
+    #layout-nav {
+        background: transparent;
+        color: #fff;
+    }
+    #layout-nav a {
+        color: #fff;
+    }
     .btn-call-to-action {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -31,9 +38,9 @@ description = "Layout for Microsoft page"
         background: #6c1b42;
     }
     .carousel-item img {
-    opacity: .5;
-}
-#accessDiv .carousel-caption .h3 {
+        opacity: .5;
+    }
+#accessDiv .carousel-caption .h3, #accessDiv .carousel-caption .h5 {
     color: #fff;
 }
     </style>
@@ -42,16 +49,16 @@ description = "Layout for Microsoft page"
 
 <body>
     <!-- Header -->
-    <header id="layout-header">
+    <!-- <header id="layout-header">
         <div class="container p-0">
             <div class="navbar navbar-top">
                 <div class="mr-auto" style="padding: .28rem 0;">
-                    <a class="nav-lang mr-md-2 mr-1" href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a> |
-                    <a class="nav-lang ml-md-2 ml-1" href="#" data-request="onSwitchLocale" data-request-data="locale: 'id'">Indonesia</a>
+                    <a class="nav-lang mr-md-2 mr-1" href="/en/ {{ this.currentPageUrl}}" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a> |
+                    <a class="nav-lang ml-md-2 ml-1" href="/id/{{ this.currentPageUrl}}" data-request="onSwitchLocale" data-request-data="locale: 'id'">Indonesia</a>
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
     {% partial 'site/no-menu-navbar' %}
     <!-- Content -->
     <section id="layout-content">
@@ -72,14 +79,57 @@ description = "Layout for Microsoft page"
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     <script>
+        $(document).ready(function() {
+            var scroll_start = 0;
+            var startchange = $('.carousel-indicators');
+            var offset = startchange.offset();
+            if (startchange.length) {
+                $(document).scroll(function() {
+                    scroll_start = $(this).scrollTop();
+                    if (scroll_start > offset.top) {
+                        $('.navbar-brand img').attr("src","storage/app/media/company-logo/agit-logo.png");
+                        $("#layout-nav").css('background-color', '#fff');
+                        $("#layout-nav a, #layout-nav").css('color', '#6c1a42');
+                    } else {
+                        $('.navbar-brand img').attr("src","storage/app/media/company-logo/logo_agit_white.png");
+                        $('#layout-nav').css('background-color', 'transparent');
+                        $("#layout-nav a, #layout-nav").css('color', '#fff');
+                    }
+                });
+            }
+        });
+
+    $(".go-to-csp").click(function() {
+        $('html,body').animate({ scrollTop: $("#csp-div").offset().top }, 1000);
+    });
     $(".btn-call-to-action, .go-to-contact").click(function() {
-        $('html,body').animate({ scrollTop: $("#contact-div").offset().top }, 'slow');
+        $('html,body').animate({ scrollTop: $("#contact-div").offset().top }, 1000);
+    });
+    $(".go-to-product").click(function() {
+        $('html,body').animate({ scrollTop: $("#product-div").offset().top }, 1000);
     });
     $("#v-pills-profile-tab").click(function() {
+        // $(".pricing-tab").css("display", "none");
         $(".azure-card").css("display", "flex");
     });
     $("#v-pills-home-tab").click(function() {
+        // $(".pricing-tab").css("display", "block");
         $(".azure-card").css("display", "none");
+    });
+
+    $(".see-pricing").click(function () {
+        $('.pop-up-image').removeClass("invisible");
+        $('.pop-up-image').addClass("visible");
+    });
+
+    $(".close-button").click(function () {
+
+        $('.pop-up-image').removeClass("visible");
+        $('.pop-up-image').addClass("invisible");
+    });
+
+    $('.carousel').carousel({
+        pause: false
     });
     </script>
     {% framework extras %} {% scripts %}

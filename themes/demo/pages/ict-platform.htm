@@ -32,7 +32,7 @@ pageNumber = "{{ :page }}"
 <div class="container">
     <div class="row my-5 justify-content-center">
         {% for record in records %}
-        {% if record.category == "ICT" %}
+        {% if record.category == "ICT" and record.sub_category == "1" %}
         <div class="col-md-3 col-12 py-3 csp-bg">
             <div class="agit-csp-card">
                 <div class="cardbox">

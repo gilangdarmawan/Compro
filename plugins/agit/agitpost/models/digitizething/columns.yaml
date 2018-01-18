@@ -8,15 +8,6 @@ columns:
         label: Description
         type: text
         searchable: true
-    post_date:
-        label: Date
-        type: date
     category:
         label: Category
         type: text
-    icon:
-        label: Icon
-        type: text
-    id:
-        label: ID
-        type: number

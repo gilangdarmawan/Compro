@@ -16,9 +16,13 @@ items:
         items:
             -
                 title: 'EBA (Enterprise Business Application)'
+                nesting: ''
                 type: url
-                url: ict-platform/EBA
+                url: /ict-platform/EBA
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -133,18 +137,26 @@ items:
         items:
             -
                 title: Analytics
+                nesting: ''
                 type: url
-                url: digital-platform/analytics
+                url: /digital-platform/analytics
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: IOT
+                nesting: ''
                 type: url
-                url: digital-platform/iot
+                url: /digital-platform/iot
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -152,10 +164,10 @@ items:
             -
                 title: Cloud
                 nesting: ''
-                type: cms-page
-                url: ''
+                type: url
+                url: /digital-platform/cloud
                 code: ''
-                reference: '404'
+                reference: ''
                 cmsPage: ''
                 replace: ''
                 viewBag:
@@ -165,10 +177,10 @@ items:
             -
                 title: Security
                 nesting: ''
-                type: cms-page
-                url: ''
+                type: url
+                url: /digital-platform/security
                 code: ''
-                reference: '404'
+                reference: ''
                 cmsPage: ''
                 replace: ''
                 viewBag:
@@ -181,7 +193,7 @@ items:
         type: cms-page
         url: ''
         code: ''
-        reference: '404'
+        reference: business-solution
         cmsPage: ''
         replace: ''
         viewBag:
@@ -442,13 +454,9 @@ items:
                     isExternal: '0'
     -
         title: Partner
-        nesting: ''
         type: cms-page
-        url: ''
         code: ''
-        reference: '404'
-        cmsPage: ''
-        replace: ''
+        reference: partner
         viewBag:
             isHidden: '0'
             cssClass: ''
