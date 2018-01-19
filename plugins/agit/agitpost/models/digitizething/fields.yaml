@@ -20,21 +20,16 @@ fields:
         label: Category
         oc.commentPosition: ''
         options:
-            4: 'Digitize Thing'
+            'Digitize Thing': 'Digitize Thing'
         span: auto
         type: dropdown
-    icon:
+    iconslider:
         label: Icon
         oc.commentPosition: ''
-        mode: file
+        mode: image
         useCaption: true
         thumbOptions:
             mode: crop
             extension: auto
         span: auto
         type: fileupload
-    sub_category:
-        label: SubCategory
-        oc.commentPosition: ''
-        span: auto
-        type: dropdown

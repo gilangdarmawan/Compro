@@ -1,0 +1,57 @@
+title = "Digitize Thing"
+url = "/digitize-thing"
+layout = "master"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "mey_no_parent"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[builderList]
+modelClass = "Agit\AgitPost\Models\DigitizeThing"
+scope = "-"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsKeyColumn = "title"
+detailsUrlParameter = "title"
+pageNumber = "{{ :page }}"
+
+[viewBag]
+localeUrl[id] = "/digitize-thing"
+==
+{% partial 'site/title' %}
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<div class="container">
+    <div class="row my-5 justify-content-center">
+        {% for record in records %}
+        {% if record.category == "Digitize Thing" %}
+        <div class="col-md-3 col-12 py-3 csp-bg">
+            <div class="agit-nofill-card">
+                <div class="cardbox">
+                    <div class="original">
+                        <div class="text">
+                            <img class="img-fluid d-block w-100" src="{{ record.iconslider.path }}">
+                            <div class="font-weight-bold mt-2">{{ record.title }}</div>
+                        </div>
+                    </div>
+                    <div class="on-hover">
+                        {{ record.desc | raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% else %}
+        <h4>{{ noRecordsMessage }}</h4>
+        {% endfor %}
+    </div>
+</div>

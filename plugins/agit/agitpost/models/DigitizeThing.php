@@ -27,6 +27,6 @@ class DigitizeThing extends Model
     public $table = 'agit_agitpost_';
 
     public $attachOne = [
-      'icon' =>'System\Models\File'
+      'iconslider' =>'System\Models\File'
     ];
 }

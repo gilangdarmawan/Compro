@@ -1,13 +1,13 @@
 columns:
     title:
-        label: Title
+        label: title
         type: text
-        searchable: true
-        sortable: true
     desc:
-        label: Description
+        label: desc
         type: text
-        searchable: true
     category:
-        label: Category
+        label: category
+        type: text
+    icon:
+        label: icon
         type: text

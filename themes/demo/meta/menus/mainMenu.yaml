@@ -203,13 +203,9 @@ items:
         items:
             -
                 title: 'Customer Engagement & CE'
-                nesting: ''
                 type: cms-page
-                url: ''
                 code: ''
-                reference: '404'
-                cmsPage: ''
-                replace: ''
+                reference: business-solution-list
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -353,7 +349,7 @@ items:
         type: cms-page
         url: ''
         code: ''
-        reference: '404'
+        reference: digitize-thing
         cmsPage: ''
         replace: ''
         viewBag:
@@ -454,9 +450,13 @@ items:
                     isExternal: '0'
     -
         title: Partner
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: partner
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -504,16 +504,16 @@ items:
             -
                 title: Career
                 nesting: ''
-                type: cms-page
-                url: ''
+                type: url
+                url: 'http://recruitment.ag-it.com/WebCareer/Career.aspx'
                 code: ''
-                reference: '404'
+                reference: ''
                 cmsPage: ''
                 replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
-                    isExternal: '0'
+                    isExternal: '1'
             -
                 title: 'Our People'
                 nesting: ''
