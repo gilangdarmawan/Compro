@@ -25,14 +25,15 @@ modelKeyColumn = "title"
 displayColumn = "title"
 notFoundMessage = "Record not found"
 
-[blogPosts]
+[builderList]
+modelClass = "Agit\AgitPost\Models\BusinessSolution"
+scope = "-"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "ict-platform-detail"
+detailsKeyColumn = "title"
+detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
-categoryFilter = "EBA"
-postsPerPage = 10
-noPostsMessage = "No posts found"
-sortOrder = "published_at desc"
-categoryPage = "ict-platform-detail"
-postPage = "ict-platform-detail"
 ==
 {% partial 'site/title' %}
 
@@ -41,36 +42,86 @@ postPage = "ict-platform-detail"
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
 <div class="container">
-    {% component 'breadcrumbs' %}
-    <!-- {% if record %}
-    <h3>{{ record.title }}</h3>
-    <img src="{{ record.iconslider.path }}" alt="">
-    <p>{{ record.post_date }}</p>
-    <p>{{ record.desc | raw }}</p>
-    <p>Category : {{ record.category }}</p>
-    {% else %} {{ notFoundMessage }} {% endif %} -->
-    {% set posts = blogPosts.posts %}
+    {% component 'breadcrumbs' %}    
+    
+    {% set records = builderList.records %}
+    {% set displayColumn = builderList.displayColumn %}
+    {% set noRecordsMessage = builderList.noRecordsMessage %}
+    {% set detailsPage = builderList.detailsPage %}
+    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
     <div class="row my-5 justify-content-center">
-        {% for post in posts %}
-        <div class="col-md-3 col-12 py-3">
-            <div class="agit-nofill-card">
-                <div class="cardbox">
-                    <div class="original">
-                        <div class="text">
-                            <div>{{ post.title }}</div>
+        
+        {% if record.title == "EBA" %}
+            {% for record in records %}
+            {%if record.category == "ICT" and record.sub_category == "2"%}
+                <div class="col-md-3 col-12 py-3">
+                    <div class="agit-nofill-card">
+                        <div class="cardbox">
+                            <div class="original">
+                                <div class="text">
+                                    <div>{{ record.title }}</div>
+                                </div>
+                            </div>
+                            <div class="on-hover">
+                                {% spaceless %} {% if detailsPage %}
+                                <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="btn btn-warning btn-sm">See More</a> {% endif %} {% endspaceless %}
+                            </div>
                         </div>
                     </div>
-                    <div class="on-hover">
-                        {{ html_limit(post.summary, 100) | raw }}
-                        <a href="{{ post.url }}" class="btn btn-warning btn-sm">
-                            See More
-                        </a>
+                </div>
+            {%endif%}
+            
+            {% endfor %}
+        {% endif %}
+        
+        {% if record.title == "NGI" %}
+            {% for record in records %}
+            {%if record.category == "ICT" and record.sub_category == "3"%}
+                <div class="col-md-3 col-12 py-3">
+                    <div class="agit-nofill-card">
+                        <div class="cardbox">
+                            <div class="original">
+                                <div class="text">
+                                    <div>{{ record.title }}</div>
+                                </div>
+                            </div>
+                            <div class="on-hover">
+                                {% spaceless %} {% if detailsPage %}
+                                <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="btn btn-warning btn-sm">See More</a> {% endif %} {% endspaceless %}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        {% else %}
-        <h5>{{ noPostsMessage }}</h5>
-        {% endfor %}
+            {%endif%}
+            
+            {% endfor %}
+        {% endif %}
+        
+        {% if record.title == "MO & BPO" %}
+            {% for record in records %}
+            {%if record.category == "ICT" and record.sub_category == "4"%}
+                <div class="col-md-3 col-12 py-3">
+                    <div class="agit-nofill-card">
+                        <div class="cardbox">
+                            <div class="original">
+                                <div class="text">
+                                    <div>{{ record.title }}</div>
+                                </div>
+                            </div>
+                            <div class="on-hover">
+                                {% spaceless %} {% if detailsPage %}
+                                <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="btn btn-warning btn-sm">See More</a> {% endif %} {% endspaceless %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {%endif%}
+            
+            {% endfor %}
+        {% endif %}
+        
     </div>
+    
 </div>

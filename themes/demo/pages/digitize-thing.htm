@@ -9,18 +9,18 @@ hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
 
+[viewBag]
+localeUrl[id] = "/digitize-thing"
+
 [builderList]
 modelClass = "Agit\AgitPost\Models\DigitizeThing"
 scope = "-"
 displayColumn = "title"
 noRecordsMessage = "No records found"
-detailsPage = "-"
+detailsPage = "digitize-thing-detail"
 detailsKeyColumn = "title"
 detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
-
-[viewBag]
-localeUrl[id] = "/digitize-thing"
 ==
 {% partial 'site/title' %}
 {% set records = builderList.records %}
@@ -44,7 +44,10 @@ localeUrl[id] = "/digitize-thing"
                         </div>
                     </div>
                     <div class="on-hover">
-                        {{ record.desc | raw }}
+                        {{ html_limit(record.desc, 100) | raw }}
+                        <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="btn btn-sm btn-warning">
+                            <b>See Details <i class="fa fa-angle-right fa-fw"></i></b>
+                        </a>
                     </div>
                 </div>
             </div>

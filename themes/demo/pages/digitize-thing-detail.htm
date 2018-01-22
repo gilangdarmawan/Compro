@@ -1,0 +1,48 @@
+title = "Digitize Thing Detail"
+url = "/digitize-thing/:title"
+layout = "master"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+child_of = "digitize-thing"
+hide_crumb = 0
+remove_crumb_trail = 0
+crumb_disabled = 0
+
+[viewBag]
+localeUrl[id] = "/digitize-thing-detail"
+
+[builderDetails]
+modelClass = "Agit\AgitPost\Models\DigitizeThing"
+identifierValue = "{{ :title }}"
+modelKeyColumn = "title"
+displayColumn = "desc"
+notFoundMessage = "Record not found"
+
+[breadcrumbs]
+main-ol-class = "breadcrumb"
+active-class = "active"
+disabled-class = "disabled"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+<div class="container">
+    {% component 'breadcrumbs' %}
+    <div class="row my-4 mx-0 no-gutters justify-content-center d-flex align-items-center">
+        <div class="col-md-6 col-12">
+        	<div class="h4 font-weight-bold">
+        		{{record.title}}
+        	</div>
+            {% if record %}
+            	{{ attribute(record, displayColumn) | raw }}
+            {% else %}
+            	{{ notFoundMessage }}
+            {% endif %}
+        </div>
+        <div class="col-md-6 col-12 text-center">
+        	<img class="img-fluid" src="{{ record.iconslider.path }}">
+        </div>
+    </div>
+</div>

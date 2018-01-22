@@ -174,4 +174,6 @@
   'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins\\rainlab\\translate\\classes\\ThemeScanner.php',
   'rainlab\\translate\\Controllers\\locales' => 'plugins\\rainlab\\translate\\controllers\\locales.php',
   'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
+  'cms\\Controllers\\themes' => 'modules\\cms\\controllers\\themes.php',
+  'AnandPatel\\WysiwygEditors\\FormWidgets\\Editor' => 'plugins\\anandpatel\\wysiwygeditors\\formwidgets\\Editor.php',
 );

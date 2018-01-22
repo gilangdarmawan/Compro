@@ -4,7 +4,7 @@ layout = "master"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
-child_of = "mey_no_parent"
+child_of = "digital-platform"
 hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
@@ -16,18 +16,25 @@ localeUrl[id] = "/digital-platform-list"
 modelClass = "Agit\AgitPost\Models\DigitalPlatform"
 identifierValue = "{{ :title }}"
 modelKeyColumn = "title"
-displayColumn = "title"
+displayColumn = "desc"
 notFoundMessage = "Record not found"
+
+[breadcrumbs]
+main-ol-class = "breadcrumb"
+active-class = "active"
+disabled-class = "disabled"
 ==
-{% partial 'site/title' %}
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
 
 <div class="container">
-    {% set record = builderDetails.record %}
-    {% set displayColumn = builderDetails.displayColumn %}
-    {% set notFoundMessage = builderDetails.notFoundMessage %}
-
+    {% component 'breadcrumbs' %}
     {% if record %}
-    	{{ attribute(record, displayColumn) }}
+    <div class="h4 font-weight-bold" style="text-transform: uppercase;">
+    	{{record.title}}
+    </div>    
+    {{ attribute(record, displayColumn) | raw }}
     {% else %}
     	{{ notFoundMessage }}
     {% endif %}

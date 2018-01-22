@@ -1,10 +1,10 @@
 title = "ICT Platform Details"
-url = "/ict-platform/:title/:slug"
+url = "/ict-platform/:sub_category/:title"
 layout = "master"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
-child_of = "ict-platform-post"
+child_of = "business-solution-list"
 hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
@@ -12,39 +12,30 @@ crumb_disabled = 0
 [viewBag]
 localeUrl[id] = "/ict-platform-details"
 
-[blogPost]
-slug = "{{ :slug }}"
-categoryPage = "ict-platform-list"
-
 [breadcrumbs]
-main-ol-class = "breadcrumb container"
+main-ol-class = "breadcrumb"
 active-class = "active"
 disabled-class = "disabled"
 
 [builderDetails]
-modelClass = "Agit\AgitPost\Models\Post"
+modelClass = "Agit\AgitPost\Models\BusinessSolution"
 identifierValue = "{{ :title }}"
 modelKeyColumn = "title"
-displayColumn = "title"
+displayColumn = "desc"
 notFoundMessage = "Record not found"
 ==
-{% set post = blogPost.post %}
-{% component 'builderDetails' %}
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
 <div class="container">
     {% component 'breadcrumbs' %}
-    <h4>{{ post.title }}</h4>
-    <p class="info">
-        Posted {% if post.categories.count %} in {% for category in post.categories %}
-        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %} {% endfor %} {% endif %} on {{ post.published_at|date('M d, Y') }}
-    </p>
-    {% if post.featured_images.count %}
-    <div class="featured-images text-center">
-        {% for image in post.featured_images %}
-        <p>
-            <img data-src="{{ image.filename }}" src="{{ image.path }}" alt="{{ image.description }}" style="max-width: 100%" />
-        </p>
-        {% endfor %}
-    </div>
+    {% if record %}
+    <div class="h4 font-weight-bold">
+    	{{record.title}}
+    </div>    
+    {{ attribute(record, displayColumn) | raw }}
+    {% else %}
+    	{{ notFoundMessage }}
     {% endif %}
-    <div class="content">{{ post.content_html|raw }}</div>
 </div>

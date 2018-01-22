@@ -28,14 +28,14 @@ disabled-class = "disabled"
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
-{% component 'breadcrumbs' %}
-
-{% if record %}
-    {{record.title}}
-    {{record.category}}
-    {{ attribute(record, displayColumn) }}
-    
-    
-{% else %}
-    {{ notFoundMessage }}
-{% endif %}
+<div class="container">
+    {% component 'breadcrumbs' %}
+    {% if record %}
+    <div class="h4 font-weight-bold">
+    	{{record.title}}
+    </div>    
+    {{ attribute(record, displayColumn) | raw }}
+    {% else %}
+    	{{ notFoundMessage }}
+    {% endif %}
+</div>
