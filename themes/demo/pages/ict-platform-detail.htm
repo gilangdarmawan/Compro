@@ -23,11 +23,13 @@ identifierValue = "{{ :title }}"
 modelKeyColumn = "title"
 displayColumn = "desc"
 notFoundMessage = "Record not found"
+
+[siteSearchInclude]
 ==
 {% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
-
+{% component 'siteSearchInclude' %}
 <div class="container">
     {% component 'breadcrumbs' %}
     {% if record %}

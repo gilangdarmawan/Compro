@@ -20,6 +20,8 @@ detailsPage = "ict-platform-list"
 detailsKeyColumn = "title"
 detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
+
+[siteSearchInclude]
 ==
 {% partial 'site/title' %}
 {% set records = builderList.records %}
@@ -28,7 +30,7 @@ pageNumber = "{{ :page }}"
 {% set detailsPage = builderList.detailsPage %}
 {% set detailsKeyColumn = builderList.detailsKeyColumn %}
 {% set detailsUrlParameter = builderList.detailsUrlParameter %}
-
+{% component 'siteSearchInclude' %}
 <div class="container">
     <div class="row my-5 justify-content-center">
         {% for record in records %}

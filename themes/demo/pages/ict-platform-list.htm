@@ -34,9 +34,11 @@ detailsPage = "ict-platform-detail"
 detailsKeyColumn = "title"
 detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
+
+[siteSearchInclude]
 ==
 {% partial 'site/title' %}
-
+{% component 'siteSearchInclude' %}
 {% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}

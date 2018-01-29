@@ -2,6 +2,12 @@ description = "Master layout"
 
 [localePicker]
 forceUrl = 0
+
+[searchInput]
+useAutoComplete = 0
+autoCompleteResultCount = 5
+showProviderBadge = 1
+searchPage = "search-results.htm"
 ==
 <!DOCTYPE html>
 <html>
@@ -29,8 +35,12 @@ forceUrl = 0
                     <a class="nav-lang mr-md-2 mr-1" href="/en/ {{ this.currentPageUrl}}" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a> |
                     <a class="nav-lang ml-md-2 ml-1" href="/id/{{ this.currentPageUrl}}" data-request="onSwitchLocale" data-request-data="locale: 'id'">Indonesia</a>
                 </div>
-                <form class="form-inline">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <!-- <form>
+                    <input type="search" placeholder="Search">
+                    <button class="btn" type="submit"></button>
+                </form> -->
+                <form class="form-inline" action="{{ searchInput.searchPage | page }}?q={{ query | url_encode(true) }}" method="get">
+                    <input class="form-control" name="q" type="text" placeholder="Search" aria-label="Search" autocomplete="off" {% if searchInput.useAutoComplete %} data-track-input data-request="onType" data-request-before-update="document.getElementById('autocomplete-results').classList.add('ss-search-form__results--visible')" data-request-update="'{{ searchInput }}::autocomplete': '#autocomplete-results'" {% endif %}>
                     <button class="btn" type="submit"><i class="fa fa-search fa-fw"></i></button>
                 </form>
             </div>
