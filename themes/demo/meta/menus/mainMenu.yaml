@@ -30,126 +30,182 @@ items:
                 items:
                     -
                         title: 'Enterprise Resource Planning'
+                        nesting: ''
                         type: url
                         url: /ict-platform/EBA/Enterprise%20Resource%20Planning
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Customer Relationship Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Customer%20Relationship%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Human Resource Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Human%20Resource%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Budget Planning Consolidation'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Budget%20Planning%20Consolidation
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Business Process Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Business%20Process%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Custom Application Development'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Custom%20Application%20Development
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Middleware Platform'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Middleware%20Platform
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Data Platform Appliance'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Data%20Platform%20Appliance%C2%A0
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'In-memory Data Platform'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/In-memory%20Data%20Platform
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Internet & Intranet Portal Platform'
+                        nesting: ''
                         type: url
                         url: '/ict-platform/default/Internet%20&%20Intranet%20Portal%20Platform'
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Document Management & Collaboration Platform'
+                        nesting: ''
                         type: url
                         url: '/ict-platform/default/Document%20Management%20&%20Collaboration%20Platform'
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Mobile Application Development Platform'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Mobile%20Application%20Development%20Platform/
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Business Intelligence Platform'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Business%20Intelligence%20Platform
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
             -
                 title: 'NGI (Next Generation Enterprise Infrastructure)'
+                nesting: ''
                 type: url
                 url: /ict-platform/NGI
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -157,72 +213,104 @@ items:
                 items:
                     -
                         title: 'IaaS & PaaS'
+                        nesting: ''
                         type: url
                         url: '/ict-platform/default/IaaS%20&%20PaaS'
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Software Defined Data Center (SDDC)'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Software%20Defined%20Data%20Center%20%28SDDC%29
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Hyper converge'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Hyper%20converge
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Flash Storage'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Flash%20converge
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Application Performance Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Application%20Performance%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Next Generation Firewall'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Next%20Generation%20Firewall
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Mobile Device Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Mobile%20Device%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
             -
                 title: 'MO & BPO (Managed Operation & Business Process Out Sourcing)'
+                nesting: ''
                 type: url
                 url: '/ict-platform/MO%20&%20BPO'
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -230,54 +318,78 @@ items:
                 items:
                     -
                         title: 'Unified Data Center Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Unified%20Data%20Center%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Seat Management'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Seat%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Business Process Outsourcing'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Business%20Process%20Outsourcing
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Business Application Managed Services'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Business%20Application%20Managed%20Services
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Infrastructure Managed Services'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Infrastructure%20Managed%20Services
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Call Center'
+                        nesting: ''
                         type: url
                         url: /ict-platform/default/Call%20Center
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -364,9 +476,13 @@ items:
         items:
             -
                 title: 'Customer Engagement & CE'
+                nesting: ''
                 type: url
                 url: /business-solution/Customer%20Engagement%20and%20Customer%20Experiences
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -374,18 +490,26 @@ items:
                 items:
                     -
                         title: 'Customer Engagement'
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Customer%20Engagement
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Customer Experiences'
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Customer%20Experiences
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
@@ -405,9 +529,13 @@ items:
                     isExternal: '0'
             -
                 title: 'Supply Chain, Logistic & Distribution'
+                nesting: ''
                 type: url
                 url: '/business-solution/Supply%20Chain,%20Logistic%20&%20Distribution'
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -415,36 +543,52 @@ items:
                 items:
                     -
                         title: 'Supply Chain'
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Supply%20Chain
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: Logistic
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Logistic
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: Distribution
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Distribution
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
             -
                 title: 'Talent Management & Workforce Productivity'
+                nesting: ''
                 type: url
                 url: '/business-solution/Talent%20Management%20&%20Workforce%20Productivity'
                 code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -452,31 +596,35 @@ items:
                 items:
                     -
                         title: 'Talent Management'
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Talent%20Management
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
                     -
                         title: 'Workforce Productivity'
+                        nesting: ''
                         type: url
                         url: /business-solution/default/Workforce%20Productivity
                         code: ''
+                        reference: ''
+                        cmsPage: ''
+                        replace: ''
                         viewBag:
                             isHidden: '0'
                             cssClass: ''
                             isExternal: '0'
     -
-        title: 'Digitize Thing'
-        nesting: ''
+        title: 'Digitize Things'
         type: cms-page
-        url: ''
         code: ''
         reference: digitize-thing
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
