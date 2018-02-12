@@ -202,4 +202,5 @@
   'OFFLINE\\SiteSearch\\Classes\\Providers\\GrakerPhotoAlbumsResultsProvider' => 'plugins\\offline\\sitesearch\\classes\\providers\\GrakerPhotoAlbumsResultsProvider.php',
   'OFFLINE\\SiteSearch\\Classes\\Result' => 'plugins\\offline\\sitesearch\\classes\\Result.php',
   'martin\\forms\\Controllers\\records' => 'plugins\\martin\\forms\\controllers\\records.php',
+  'backend\\Controllers\\auth' => 'modules\\backend\\controllers\\auth.php',
 );
