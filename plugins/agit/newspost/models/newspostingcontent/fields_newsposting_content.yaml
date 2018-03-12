@@ -1,0 +1,84 @@
+fields:
+    title_content_id:
+        label: 'Title Content (id)'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    title_content_en:
+        label: 'Title Content (en)'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    description_content_id:
+        label: 'Description Content (id)'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: textarea
+    description_content_en:
+        label: 'Description Content (en)'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: textarea
+    contentImage:
+        label: 'Image Upload'
+        span: full
+        oc.commentPosition: ''
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+    image_content:
+        label: 'Image URL'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    image_width:
+        label: 'Image Width (%)'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    type_content:
+        label: 'Type Content'
+        oc.commentPosition: ''
+        options:
+            1: 'Image Only'
+            2: 'Text Only'
+            3: 'Image and Text'
+        span: auto
+        required: 1
+        type: dropdown
+    api_type:
+        label: 'API Type'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        default: contentelement
+        type: text
+    precedence_content:
+        label: 'Content Order'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    news_id:
+        label: 'Parent News ID'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    content_id:
+        label: 'Content ID'
+        oc.commentPosition: ''
+        span: auto
+        disabled: 1
+        hidden: 1
+        type: text

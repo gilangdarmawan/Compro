@@ -1,0 +1,12 @@
+list: $/agit/newspost/models/newspostingcontent/columns_newsposting_content.yaml
+modelClass: Agit\NewsPost\Models\NewsPostingContent
+title: NewsPostingContent
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'agit/newspost/newspostingcontent/update/:id'

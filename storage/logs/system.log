@@ -9438,3 +9438,24 @@ Stack trace:
 #52 C:\xampp\htdocs\compro\index.php(43): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #53 C:\xampp\htdocs\compro\server.php(21): require_once('C:\\xampp\\htdocs...')
 #54 {main}  
+[2018-03-08 06:29:32] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost2\Plugin.php:14
+Stack trace:
+#0 {main}  
+[2018-03-08 06:29:41] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost2\Plugin.php:14
+Stack trace:
+#0 {main}  
+[2018-03-08 06:31:32] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost - Copy\Plugin.php:14
+Stack trace:
+#0 {main}  
+[2018-03-08 06:31:33] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost - Copy\Plugin.php:14
+Stack trace:
+#0 {main}  
+[2018-03-08 06:31:33] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost - Copy\Plugin.php:14
+Stack trace:
+#0 {main}  
+[2018-03-08 06:31:34] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost - Copy\Plugin.php:14
+Stack trace:
+#0 {main}  
+[2018-03-08 06:31:37] dev.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot declare class Agit\NewsPost\Plugin, because the name is already in use in C:\xampp\htdocs\compro\plugins\agit\newspost - Copy\Plugin.php:14
+Stack trace:
+#0 {main}  

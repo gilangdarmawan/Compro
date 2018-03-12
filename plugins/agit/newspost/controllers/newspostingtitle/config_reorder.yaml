@@ -1,0 +1,4 @@
+title: NewsPostingTitle
+modelClass: Agit\NewsPost\Models\NewsPostingTitle
+toolbar:
+    buttons: reorder_toolbar

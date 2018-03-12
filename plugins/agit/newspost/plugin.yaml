@@ -7,5 +7,10 @@ plugin:
 navigation:
     main-menu-item:
         label: 'agit.newspost::lang.plugin.name'
-        url: agit/newspost/newspostcontroller
-        icon: icon-certificate
+        url: agit/newspost/newspostingtitle
+        icon: icon-newspaper-o
+        sideMenu:
+            'News Content':
+                label: 'News Content'
+                url: agit/newspost/newspostingcontent
+                icon: icon-plus

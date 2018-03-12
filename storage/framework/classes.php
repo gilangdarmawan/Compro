@@ -203,4 +203,9 @@
   'OFFLINE\\SiteSearch\\Classes\\Result' => 'plugins\\offline\\sitesearch\\classes\\Result.php',
   'martin\\forms\\Controllers\\records' => 'plugins\\martin\\forms\\controllers\\records.php',
   'backend\\Controllers\\auth' => 'modules\\backend\\controllers\\auth.php',
+  'agit\\newspost\\Controllers\\newspostingtitle' => 'plugins\\agit\\newspost\\controllers\\newspostingtitle.php',
+  'Agit\\NewsPost\\Models\\NewsPostingTitle' => 'plugins\\agit\\newspost\\models\\NewsPostingTitle.php',
+  'agit\\newspost\\Controllers\\newspostingcontent' => 'plugins\\agit\\newspost\\controllers\\newspostingcontent.php',
+  'Agit\\NewsPost\\Models\\NewsPostingContent' => 'plugins\\agit\\newspost\\models\\NewsPostingContent.php',
+  'Agit\\NewsContentPost\\Models\\NewsContentPosting' => 'plugins\\agit\\newscontentpost\\models\\NewsContentPosting.php',
 );

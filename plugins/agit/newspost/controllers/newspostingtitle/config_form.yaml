@@ -1,0 +1,10 @@
+name: NewsPostingTitle
+form: $/agit/newspost/models/newspostingtitle/fields_newsposting_title.yaml
+modelClass: Agit\NewsPost\Models\NewsPostingTitle
+defaultRedirect: agit/newspost/newspostingtitle
+create:
+    redirect: 'agit/newspost/newspostingtitle/update/:id'
+    redirectClose: agit/newspost/newspostingtitle
+update:
+    redirect: agit/newspost/newspostingtitle
+    redirectClose: agit/newspost/newspostingtitle

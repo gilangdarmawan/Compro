@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: Number
+        type: number
+        searchable: true
+        sortable: true
+    news_id:
+        label: 'News ID'
+        type: number
+        searchable: true
+        sortable: true
+    title_id:
+        label: 'Title (id)'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    title_en:
+        label: 'Title (en)'
+        type: text
+        searchable: true
+        invisible: false
+        sortable: true
+    created_at:
+        label: 'Created At'
+        type: datetime
+        searchable: true
+        sortable: true
