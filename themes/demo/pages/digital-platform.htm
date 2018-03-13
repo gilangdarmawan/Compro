@@ -18,6 +18,9 @@ detailsPage = "digital-platform-list"
 detailsKeyColumn = "title"
 detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
+
+[viewBag]
+localeUrl[id] = "/digital-platform/id"
 ==
 {% partial 'site/title' %}
 {% set records = builderList.records %}

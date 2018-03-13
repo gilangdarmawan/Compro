@@ -18,6 +18,9 @@ detailsPage = "business-solution-list"
 detailsKeyColumn = "title"
 detailsUrlParameter = "title"
 pageNumber = "{{ :page }}"
+
+[viewBag]
+localeUrl[id] = "/business-solution/id"
 ==
 {% partial 'site/title' %}
 {% set records = builderList.records %}

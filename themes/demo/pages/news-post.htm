@@ -1,4 +1,4 @@
-title = "News List"
+title = "News Detail"
 url = "/news/:id"
 layout = "master"
 is_hidden = 0
@@ -8,6 +8,9 @@ child_of = "news"
 hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
+
+[viewBag]
+localeUrl[id] = "/news/id/:id"
 
 [blogPost]
 slug = "{{ :slug }}"
@@ -59,10 +62,39 @@ pageNumber = "{{ :page }}"
 {% set notFoundMessage = titleDetails.notFoundMessage %}
 
 {% if recordTitle %}
-{{record.title_en}}
+{{recordTitle.title_en|_}}
     {{ attribute(recordTitle, displayColumn) }}
+    
+        {% for item in record.topic_id %}
+            {% if item == 1%}
+                News Releases
+            {% endif %}
+            {% if item == 2%}
+                Organization Announcement
+            {% endif %}
+            {% if item == 3%}
+                Innovation
+            {% endif %}
+            {% if item == 4%}
+                Product &Services
+            {% endif %}
+            {% if item == 5%}
+                Events
+            {% endif %}
+            {% if item == 6%}
+                Recruiting
+            {% endif %}
+            {% if item == 7%}
+                CSR
+            {% endif %}
+            {% if item == 8%}
+                Investors
+            {% endif %}
+            {% if item == 9%}
+                Others
+            {% endif %}
+        {% endfor %}
 {% else %}
-    {{ notFoundMessage }}
 {% endif %}
 
 {% set records = contentList.records %}
@@ -75,41 +107,24 @@ pageNumber = "{{ :page }}"
 <ul class="record-list">
     {% for record in records %}
     {% if record.news_id == recordTitle.news_id %}
+        {{ record.news_id }}
+        
+        
+    <li>
+        {% spaceless %}
+            {% if detailsPage %}
+                <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+            {% endif %}
     
-    {% endif %}
-        <li>
-            {# Use spaceless tag to remove spaces inside the A tag. #}
-            {% spaceless %}
-                {% if detailsPage %}
-                    <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
-                {% endif %}
-
-                {{ attribute(record, displayColumn) }}
-
-                {% if detailsPage %}
-                    </a>
-                {% endif %}
-            {% endspaceless %}
+            {{ attribute(record, displayColumn) }}
+    
+            {% if detailsPage %}
+                </a>
+            {% endif %}
+        {% endspaceless %}
         </li>
-    {% else %}
-        <li class="no-data">{{ noRecordsMessage }}</li>
+        
+    {% endif %}
+        
     {% endfor %}
 </ul>
-
-{% if records.lastPage > 1 %}
-    <ul class="pagination">
-        {% if records.currentPage > 1 %}
-            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) }}">&larr; Prev</a></li>
-        {% endif %}
-
-        {% for page in 1..records.lastPage %}
-            <li class="{{ records.currentPage == page ? 'active' : null }}">
-                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
-            </li>
-        {% endfor %}
-
-        {% if records.lastPage > records.currentPage %}
-            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
-        {% endif %}
-    </ul>
-{% endif %}

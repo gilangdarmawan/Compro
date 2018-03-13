@@ -38,6 +38,10 @@ class NewsPostingContent extends Model
 public $attachOne = [
       'contentImage' =>'System\Models\File'
     ];
+
+    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
+    public $translatable = ['title_en','description_content_en'];
+
     public function afterDelete(){
       $client = new \GuzzleHttp\Client(['base_uri' => 'http://54.254.239.106/Astragraphia/public/news/delete/']);
 

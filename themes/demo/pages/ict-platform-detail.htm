@@ -34,7 +34,7 @@ notFoundMessage = "Record not found"
     {% component 'breadcrumbs' %}
     {% if record %}
     <div class="h4 font-weight-bold">
-    	{{record.title}}
+    	{{ record.title|_ }}
     </div>    
     {{ attribute(record, displayColumn) | raw }}
     {% else %}
