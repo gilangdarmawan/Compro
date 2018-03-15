@@ -37,35 +37,26 @@ detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
-{% set post = blogPost.post %}
 
-<div class="container">
-    {% component 'breadcrumbs' %}
-    <div class="content">
-        {{ post.content_html|raw }} {% if post.featured_images.count %}
-        <div class="featured-images text-center">
-            {% for image in post.featured_images %}
-            <p>
-                <img data-src="{{ image.filename }}" src="{{ image.path }}" alt="{{ image.description }}" style="max-width: 100%" />
-            </p>
-            {% endfor %}
-        </div>
-        {% endif %}
-        <p class="info">
-            Posted {% if post.categories.count %} in {% for category in post.categories %}
-            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %} {% endfor %} {% endif %} on {{ post.published_at|date('M d, Y') }}
-        </p>
-    </div>
-</div>
 {% set recordTitle = titleDetails.record %}
 {% set displayColumn = titleDetails.displayColumn %}
 {% set notFoundMessage = titleDetails.notFoundMessage %}
 
-{% if recordTitle %}
-{{recordTitle.title_en|_}}
-    {{ attribute(recordTitle, displayColumn) }}
-    
-        {% for item in record.topic_id %}
+{% set records = contentList.records %}
+{% set displayColumn = contentList.displayColumn %}
+{% set noRecordsMessage = contentList.noRecordsMessage %}
+{% set detailsPage = contentList.detailsPage %}
+{% set detailsKeyColumn = contentList.detailsKeyColumn %}
+{% set detailsUrlParameter = contentList.detailsUrlParameter %}
+
+<div class="container mb-4">
+    {% component 'breadcrumbs' %}
+    <div class="h2">
+        {{ recordTitle.title_en }}
+    </div>
+    <p class="info">
+        Posted in 
+        {% for item in recordTitle.topic_id %}
             {% if item == 1%}
                 News Releases
             {% endif %}
@@ -76,7 +67,7 @@ pageNumber = "{{ :page }}"
                 Innovation
             {% endif %}
             {% if item == 4%}
-                Product &Services
+                Product & Services
             {% endif %}
             {% if item == 5%}
                 Events
@@ -94,37 +85,15 @@ pageNumber = "{{ :page }}"
                 Others
             {% endif %}
         {% endfor %}
-{% else %}
-{% endif %}
-
-{% set records = contentList.records %}
-{% set displayColumn = contentList.displayColumn %}
-{% set noRecordsMessage = contentList.noRecordsMessage %}
-{% set detailsPage = contentList.detailsPage %}
-{% set detailsKeyColumn = contentList.detailsKeyColumn %}
-{% set detailsUrlParameter = contentList.detailsUrlParameter %}
-
-<ul class="record-list">
+        &nbsp;on {{ recordTitle.created_at|date('M d, Y') }}
+    </p>
     {% for record in records %}
-    {% if record.news_id == recordTitle.news_id %}
-        {{ record.news_id }}
-        
-        
-    <li>
-        {% spaceless %}
-            {% if detailsPage %}
-                <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
-            {% endif %}
-    
-            {{ attribute(record, displayColumn) }}
-    
-            {% if detailsPage %}
-                </a>
-            {% endif %}
-        {% endspaceless %}
-        </li>
-        
-    {% endif %}
-        
+        <div class="content">
+            <div class="row mx-0 mb-4 justify-content-center">
+                <img class="d-block w-100 h-100" src="{{ record.contentImage.path }}">
+                <div class="small my-3">{{ record.title_content_en }}</div>
+            </div>
+            {{ record.description_content_en | raw }}
+        </div>
     {% endfor %}
-</ul>
+</div>
