@@ -208,4 +208,5 @@
   'agit\\newspost\\Controllers\\newspostingcontent' => 'plugins\\agit\\newspost\\controllers\\newspostingcontent.php',
   'Agit\\NewsPost\\Models\\NewsPostingContent' => 'plugins\\agit\\newspost\\models\\NewsPostingContent.php',
   'Agit\\NewsContentPost\\Models\\NewsContentPosting' => 'plugins\\agit\\newscontentpost\\models\\NewsContentPosting.php',
+  'jorgeandrade\\subscribe\\Controllers\\subscribers' => 'plugins\\jorgeandrade\\subscribe\\controllers\\subscribers.php',
 );
