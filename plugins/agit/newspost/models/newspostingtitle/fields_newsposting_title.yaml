@@ -96,13 +96,13 @@ tabs:
             thumbOptions:
                 mode: crop
                 extension: auto
-            span: full
+            span: auto
             type: fileupload
             tab: Meta
         meta_image:
             label: 'Meta Image URL'
             oc.commentPosition: ''
-            span: full
+            span: left
             required: 1
             type: text
             tab: Meta
