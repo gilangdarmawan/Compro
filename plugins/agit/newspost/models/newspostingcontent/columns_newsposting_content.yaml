@@ -26,3 +26,8 @@ columns:
         type: number
         searchable: true
         sortable: true
+    precedence_content:
+        label: 'Content Order'
+        type: number
+        searchable: true
+        sortable: true

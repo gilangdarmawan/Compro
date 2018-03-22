@@ -6,11 +6,15 @@ plugin:
     homepage: ''
 navigation:
     main-menu-item:
-        label: 'agit.newspost::lang.plugin.name'
+        label: '[Agit] Post News'
         url: agit/newspost/newspostingtitle
         icon: icon-newspaper-o
         sideMenu:
+            'News Title':
+                label: 'News Title'
+                url: agit/newspost/newspostingtitle
+                icon: icon-archive
             'News Content':
                 label: 'News Content'
                 url: agit/newspost/newspostingcontent
-                icon: icon-plus
+                icon: icon-reorder

@@ -9,6 +9,9 @@ hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
 
+[viewBag]
+localeUrl[id] = "/homepage"
+
 [blogPosts]
 pageNumber = "{{ :page }}"
 categoryFilter = "news"
@@ -25,13 +28,43 @@ geo = "disabled"
 thanksMessage = "Thanks for subscribe!"
 errorMessage = "Email already exists!"
 ==
-{% content 'Home/Landing' %}
-{% content 'Home/Offer' %}
+<!-- {% content 'Home/Landing' %} -->
+<!-- {% content 'Home/Offer' %} -->
+
+<div class="carousel slide" data-ride="carousel" id="accessDiv">
+	<div class="carousel-inner">
+		<div class="carousel-item active"><img class="d-block w-100 fr-fic fr-dii" src="storage/app/media/home/jumbotron-2.jpg">
+			<div class="carousel-caption">
+				<div class="card">
+					<div class="card-body">
+						<div class="h3">{{'Act Confidently with'|_}}
+							<br><strong>{{'OUR DIGITAL TRANSFORMATION'|_}}</strong></div>
+						<div class="h4 mb-4">{{'We reassembling your digital system'|_}}</div><a class="btn btn-warning" href="#">{{'Learn More'|_}}</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page-content bg-white">
+	<div class="container home-offer">
+		<div class="row flex-sm-row-reverse text-md-left text-center">
+			<div class="col-12 col-md-5 mr-auto">
+				<div class="desc">{{'What we offer:'|_}}</div>{{'Astra Graphia Information Technology (AGIT) is a leading Information and Communication Technology solutions provider in Indonesia. Combining our wide range of ICT portfolios, trusted skillful professionals and proven track records with good reputation in managing large and complex ICT projects especially for SAP Implementation, Systems Integration and Outsourcing Projects, AGIT will take care your IT to allow you attaining the business growth.'|_}}
+				<br>
+				<br>{{'AGIT is a subsidiary of PT Astra Graphia, Tbk. (Astragraphia) – a member of Astra family. Founded in 1976, Astragraphia is an IT-based Business Solutions provider with Fuji Xerox as its main partner. Listed in Indonesia Stock Exchange (IDX:ASGR) in 1989, Astragraphia has 75 service points distribute in 21 branches across Indonesia.'|_}}
+			</div>
+			<div class="col-11 ml-auto col-md-6">
+				<!-- <img src="storage/app/media/home/home_offer.png" alt="" class="img-fluid mb-4 fr-fic fr-dii"> -->
+			</div>
+		</div>
+	</div>
+</div>
+
 {% set posts = blogPosts.posts %}
 <div class="bg-white slide-section">
     <div class="container">
         <div class="desc mb-5">
-            News
+        {{'News'|_}}
             <br>
             <span>{{ 'Keep update with our Activities & Communities'|_ }}</span>
         </div>
@@ -54,13 +87,13 @@ errorMessage = "Email already exists!"
             {% endfor %}
         </div>
         <div class="text-center mt-5">
-            <a href="{{ 'news'|page }}" class="btn btn-primary">More News</a>
+            <a href="{{ 'news'|page }}" class="btn btn-primary">{{'More News'|_}}</a>
         </div>
     </div>
 </div>
 <div class="page-content bg-light">
     <div class="container partner-div">
-        <div class="title">Our Partners</div>
+        <div class="title">{{'Our Partners'|_}}</div>
         <div class="row no-gutters my-md-5 my-3">
             <div class="col-md-10 col-12 mx-auto">
                 {% content 'Home/Partners' %}            
@@ -72,7 +105,7 @@ errorMessage = "Email already exists!"
     <div class="container partners-section">
         <div class="row align-items-center">
             <div class="col-md-3 col-12 ml-auto">
-                <div class="h6"><b>Subscribe Us</b> Now</div>
+                <div class="h6"><b>{{'Subscribe Us'|_}}</b> Now</div>
             </div>
             <div class="col-md-7 col-12 mr-auto">
                 <form name="form-subscribe-andradedev" id="form-subscribe-andradedev" data-request="{{ formSubscribe }}::onAddSubscriber" data-request-update="'{{formSubscribe}}::alert': '#result'">
@@ -81,7 +114,7 @@ errorMessage = "Email already exists!"
                       <input type="email" class="form-control form-control-lg" name="email" placeholder="Your E-mail" required>
                     </div>
                     <div class="col-md-3 col-6">
-                      <button class="btn btn-outline-warning btn-lg btn-block" form="form-subscribe-andradedev">Subscribe</button>
+                      <button class="btn btn-outline-warning btn-lg btn-block" form="form-subscribe-andradedev">{{'Subscribe'|_}}</button>
                     </div>
                   </div>
                 </form>

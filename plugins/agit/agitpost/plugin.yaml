@@ -6,7 +6,7 @@ plugin:
     homepage: 'https://github.com/gilangdarmawan'
 navigation:
     main-menu-item:
-        label: Post
+        label: '[Agit] Category'
         url: agit/agitpost/post
         icon: icon-edit
         sideMenu:

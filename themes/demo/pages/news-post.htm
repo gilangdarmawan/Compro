@@ -55,7 +55,7 @@ pageNumber = "{{ :page }}"
         {{ recordTitle.title_en }}
     </div>
     <p class="info">
-        Posted in 
+        Posted in
         {% for item in recordTitle.topic_id %}
             {% if item == 1%}
                 News Releases
@@ -87,7 +87,7 @@ pageNumber = "{{ :page }}"
         {% endfor %}
         &nbsp;on {{ recordTitle.created_at|date('M d, Y') }}
     </p>
-    {% for record in records %}
+    {% for record in records if record.news_id == recordTitle.news_id%}
         <div class="content">
             <div class="row mx-0 mb-4 justify-content-center">
                 <img class="d-block w-100 h-100" src="{{ record.contentImage.path }}">
